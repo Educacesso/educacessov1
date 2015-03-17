@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="asp\cadastroCurso.aspx" />
     <Content Include="fale-conosco.html" />
     <Content Include="fotos.html" />
     <Content Include="google-glass.html" />
@@ -133,6 +134,18 @@
     <Content Include="_textos\specs-txt.html" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="asp\cadastroCurso.aspx.cs">
+      <DependentUpon>cadastroCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\cadastroCurso.aspx.designer.cs">
+      <DependentUpon>cadastroCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dao\ConnectionFactory.cs" />
+    <Compile Include="dao\CursoDAO.cs" />
+    <Compile Include="modelo\Curso.cs" />
+    <Compile Include="modelo\Pessoa.cs" />
+    <Compile Include="modelo\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -154,7 +167,6 @@
     <Content Include="_textos\.DS_Store" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="asp\" />
     <Folder Include="_media\" />
   </ItemGroup>
   <PropertyGroup>
