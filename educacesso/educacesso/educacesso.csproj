@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="asp\cadastroCurso.aspx" />
+    <Content Include="asp\Tela_login.aspx" />
     <Content Include="fale-conosco.html" />
     <Content Include="fotos.html" />
     <Content Include="google-glass.html" />
@@ -68,6 +69,7 @@
     <Content Include="_css\css.css" />
     <Content Include="_css\form.css" />
     <Content Include="_css\fotos.css" />
+    <Content Include="_css\Login.css" />
     <Content Include="_css\media.css" />
     <Content Include="_css\specs.css" />
     <Content Include="_css\StyleSheet.css" />
@@ -141,8 +143,15 @@
     <Compile Include="asp\cadastroCurso.aspx.designer.cs">
       <DependentUpon>cadastroCurso.aspx</DependentUpon>
     </Compile>
+    <Compile Include="asp\Tela_login.aspx.cs">
+      <DependentUpon>Tela_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\Tela_login.aspx.designer.cs">
+      <DependentUpon>Tela_login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="dao\ConnectionFactory.cs" />
     <Compile Include="dao\CursoDAO.cs" />
+    <Compile Include="dao\UsuarioDAO.cs" />
     <Compile Include="modelo\Curso.cs" />
     <Compile Include="modelo\Pessoa.cs" />
     <Compile Include="modelo\Usuario.cs" />

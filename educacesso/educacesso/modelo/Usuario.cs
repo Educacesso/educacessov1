@@ -5,7 +5,7 @@ using System.Web;
 
 namespace educacesso.modelo
 {
-    public class Usuario
+    public class Usuario : Pessoa
     {
         // Atributos
         private String login;
