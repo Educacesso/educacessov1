@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="asp\cadastroCurso.aspx" />
+    <Content Include="asp\listaCursos.aspx" />
     <Content Include="asp\Tela_login.aspx" />
     <Content Include="fale-conosco.html" />
     <Content Include="fotos.html" />
@@ -127,6 +128,7 @@
     <Content Include="_interface\04-multimidia.jpg" />
     <Content Include="_interface\05-fale-conosco.jpg" />
     <Content Include="_javascript\audio.js" />
+    <Content Include="_javascript\cursos.js" />
     <Content Include="_javascript\funcoes.js" />
     <Content Include="_textos\fale-conosco-txt.html" />
     <Content Include="_textos\fotos-txt.html" />
@@ -142,6 +144,13 @@
     </Compile>
     <Compile Include="asp\cadastroCurso.aspx.designer.cs">
       <DependentUpon>cadastroCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\listaCursos.aspx.cs">
+      <DependentUpon>listaCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\listaCursos.aspx.designer.cs">
+      <DependentUpon>listaCursos.aspx</DependentUpon>
     </Compile>
     <Compile Include="asp\Tela_login.aspx.cs">
       <DependentUpon>Tela_login.aspx</DependentUpon>
@@ -168,12 +177,12 @@
     <Content Include="_css\.DS_Store" />
     <Content Include="_fonts\bubblegum-sans-regular.otf" />
     <Content Include="_fonts\computer-font.ttf" />
-    <Content Include="_imagens\.DS_Store" />
-    <Content Include="_imagens\glass-logo-grd" />
-    <Content Include="_imagens\Thumbs.db" />
+    <Content Include="_interface\_imagens\.DS_Store" />
+    <Content Include="_interface\_imagens\Thumbs.db" />
     <Content Include="_interface\Thumbs.db" />
     <Content Include="_javascript\.DS_Store" />
     <Content Include="_textos\.DS_Store" />
+    <Content Include="_imagens\glass-logo-grd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="_media\" />

@@ -25,7 +25,7 @@ namespace educacesso.dao
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = sql;
                 cmd.Parameters.Add(new SqlParameter("@login", curso.Nome));
-                cmd.Parameters.Add(new SqlParameter("@senha", curso.Descricao))
+                cmd.Parameters.Add(new SqlParameter("@senha", curso.Descricao));
                 cmd.ExecuteNonQuery();
                 conn.Close();
             }
