@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        Categorias: <asp:DropDownList ID="dropCategorias" runat="server" ></asp:DropDownList>
+        Categorias: <asp:DropDownList ID="dropCategorias" runat="server" onblur="enviar()" OnSelectedIndexChanged="dropCategorias_SelectedIndexChanged"></asp:DropDownList>
                 <br />
         Cursos: <asp:DropDownList ID="dropCursos" runat="server"></asp:DropDownList>            
     </div>

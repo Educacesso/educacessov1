@@ -1,6 +1,7 @@
 ﻿function enviar(){
-    document.getElementsByTagName("form").submit();
+    document.getElementById("form1").submit();
 }
 
-document.getElementById("dropCategorias").focus();
+
+
 
