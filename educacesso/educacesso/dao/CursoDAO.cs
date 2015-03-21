@@ -39,5 +39,28 @@ namespace PortalEducacesso.dao
                 conn.Close();
             }
         }
+
+        public void listar(Curso curso)
+        {
+            SqlDataReader dr;
+            try
+            {
+                conn = new ConnectionFactory().getConnection();
+                cmd = conn.CreateCommand();
+                cmd.CommandText = "SELECT * FROM curso WHERE codigo=@cdCurso";
+                cmd.Parameters.Add(new SqlParameter("@cdCurso", curso.Codigo));
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    curso.Nome = Convert.ToString(dr[0]);
+                    curso.Descricao = Convert.ToString(dr[1]);
+                }
+
+            }
+            catch (SqlException erro)
+            {
+                throw new InvalidExpressionException("Erro ao Listar dados." + erro.Message);
+            }
+        }        
     }
 }

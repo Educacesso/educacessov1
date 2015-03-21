@@ -25,12 +25,6 @@ namespace PortalEducacesso.asp
             curso.Categoria = selectCateg.Text;
             return curso;
         }
-        private void setForm(Curso curso)
-        {
-            txtNome.Text = curso.Nome;
-            txtDescricao.Text = curso.Descricao;
-            selectCateg.Text = curso.Categoria;
-        }
 
         protected void btnCadastrar_Click(object sender, EventArgs e)
         {

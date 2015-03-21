@@ -7,7 +7,15 @@ namespace PortalEducacesso.modelo
 {
     public class Curso
     {
-        // Atributos        
+        // Atributos   
+        private int codigo;
+
+        public int Codigo
+        {
+            get { return codigo; }
+            set { codigo = value; }
+        }
+
         private String nome;
 
         public String Nome
