@@ -16,25 +16,50 @@ namespace educacesso.asp
         CursoDAO cdao = new CursoDAO();
         Curso curso = new Curso();
 
-        private void setForm(Curso curso)
-        {
+        SqlConnection conn;
+        SqlCommand cmd;
+        DataSet ds = new DataSet();
 
+        private String selecionada;
+
+        public String Selecionada
+        {
+            get { return selecionada; }
+            set { selecionada = value; }
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlConnection conn;
-            SqlCommand cmd;
+            // Preenche o dropdown de categorias
             conn = new ConnectionFactory().getConnection();
             cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT * FROM cursos";
             SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
+            cmd.CommandText = "SELECT * FROM curso";
             da.Fill(ds);
-            dropCategorias.DataTextField = ds.Tables[0].Columns["nmCurso"].ToString();
+            dropCategorias.DataTextField = ds.Tables[0].Columns["ctCurso"].ToString();
             dropCategorias.DataValueField = ds.Tables[0].Columns["cdCurso"].ToString();
             dropCategorias.DataSource = ds.Tables[0];
             dropCategorias.DataBind();
+        }
+
+        private void carregaCursos()
+        {
+            // Preenche o dropdown de cursos  
+            conn = new ConnectionFactory().getConnection();
+            cmd = conn.CreateCommand();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            cmd.CommandText = "SELECT * FROM curso WHERE ctCurso = ' " + Selecionada + " ' ";
+            da.Fill(ds);
+            dropCursos.DataTextField = ds.Tables[0].Columns["nmCurso"].ToString();
+            dropCursos.DataValueField = ds.Tables[0].Columns["cdCurso"].ToString();
+            dropCursos.DataSource = ds.Tables[0];
+            dropCursos.DataBind();
+        }
+
+        protected void dropCategorias_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Selecionada = dropCategorias.Text;
+            carregaCursos(); 
         }
     }
 }
