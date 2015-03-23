@@ -22,7 +22,7 @@
                     <h1>Menu Principal</h1>
                     <ul>
                         <li class="active"><a href="Main.aspx">Home</a></li>
-                        <li><a href="#">Cursos</a></li>
+                        <li><a href="listaCursos.aspx">Cursos</a></li>
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Fale Conosco</a></li>
                     </ul>
