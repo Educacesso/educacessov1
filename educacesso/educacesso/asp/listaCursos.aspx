@@ -20,8 +20,8 @@
         <br />
         <br />
         <a href="cadastroCurso.aspx">Cadastrar curso</a>       
+        <script src="../js/curso.js"></script>
     </div>
     </form>
-    <script src="../_javascript/cursos.js"></script>
 </body>
 </html>

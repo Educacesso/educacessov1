@@ -62,7 +62,6 @@
     <Content Include="asp\listaCursos.aspx" />
     <Content Include="asp\Logar.aspx" />
     <Content Include="asp\Main.aspx" />
-    <Content Include="css\index.css" />
     <Content Include="css\login.css" />
     <Content Include="css\mainEstilo.css" />
     <Content Include="css\StyleSheet.css" />
@@ -70,6 +69,7 @@
     <Content Include="Imagens\enem-pequeno.png" />
     <Content Include="Imagens\escrevendoo.jpg" />
     <Content Include="Imagens\logoEducacesso.png" />
+    <Content Include="js\curso.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -112,7 +112,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Imagens\Thumbs.db" />
     <Content Include="asp\MasterPage.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
