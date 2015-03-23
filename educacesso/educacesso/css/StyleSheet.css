@@ -1,0 +1,167 @@
+﻿@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
+body {
+    
+    background-color:rgba(255,165,20,0.7);
+}
+
+div#interface{
+    background-color: #ffffff;
+    width: 1200px;
+    height: auto;
+    margin: -10px auto 10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+header#cabecalho{
+    
+    height: 180px;
+   
+}
+
+header#cabecalho h2{
+    position: absolute;
+    color: #606060;
+    font-family: 'Open Sans Condensed', sans-serif;
+    left: 160px;
+    top: 90px;
+    font-size: 14.2pt;
+    z-index: 2;
+}
+
+div#logo img{
+    top: 5px;
+    width: 340px;
+    height: 110px;
+    left: 60px;
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+
+}
+
+nav#menu {
+    display: block;
+    
+}
+
+nav#menu h1{
+    display: none;
+    
+}
+
+nav#menu ul{
+    
+    list-style: none;
+    position: absolute;
+   
+    top: 80px;
+    left: 80px;
+     width: 1150px;
+     border-bottom: 2px solid #e0dcdc;
+    
+}
+
+nav#menu li{
+    
+    position: relative;
+    left: 500px;
+    width: 130px;
+    height:35px;
+    display: inline-block;
+    padding: 3px;
+    margin: 2px;
+    transition: 1s;
+    line-height: 35px;
+    text-align: center;
+    
+    
+}
+
+nav#menu a, div#menu-botao a{
+    transition: 0.4s;
+    text-decoration: none;
+    color: #464444;
+    font-size: 13.5pt;
+    font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+    
+    
+   
+   /*font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    
+}
+nav#menu a:hover, div#menu-botao a:hover, nav#menu a:focus, div#menu-botao a:focus{
+    color:#00aeff;
+    border-bottom: 2px solid #888888;
+   
+}    
+
+
+nav#menu li.active a, nav#menu li.hover a{
+    color: #00aeff;   
+    border-bottom: none;
+    
+}
+
+div#menu-botao ul{
+    list-style: none;
+}
+
+div#menu-botao li span.esquerda{
+    top: 10px;
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: rgba(120,142,225,0.1);
+    box-shadow: 1px 2px 7px rgba(26,07,245,0.6);
+    position: absolute;
+    margin-right: 5px;
+    left: 980px;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+div#menu-botao li span.direita{
+    top: 10px;
+    width: 100px;
+    height: 40px;
+    background-color:rgba(225,165,0,0.2);
+    box-shadow: 1px 2px 7px rgba(255,165,0,0.6);
+    position: absolute;
+    margin-right: 0;
+    left: 1140px;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+div#menu-botao li span.esquerda a:hover{
+    border: none;
+}
+
+div#menu-botao li span.direita a:hover{
+    color: rgba(225,165,0,1);
+    border: none;
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 2px solid #e0dcdc;
+    
+}
+
+footer#rodape p{
+    color: #00aeff;
+    text-align: center;
+}
+
+footer#rodape a{
+    text-align: center;
+}
