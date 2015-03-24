@@ -57,11 +57,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="asp\cadastroUsuario.aspx" />
-    <Content Include="asp\cadastroCurso.aspx" />
-    <Content Include="asp\listaCursos.aspx" />
-    <Content Include="asp\Logar.aspx" />
-    <Content Include="asp\Main.aspx" />
+    <Content Include="cadastroUsuario.aspx" />
+    <Content Include="cadastroCurso.aspx" />
+    <Content Include="listaCursos.aspx" />
+    <Content Include="Logar.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="css\login.css" />
     <Content Include="css\mainEstilo.css" />
     <Content Include="css\StyleSheet.css" />
@@ -73,33 +73,33 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="asp\cadastroUsuario.aspx.cs">
+    <Compile Include="cadastroUsuario.aspx.cs">
       <DependentUpon>cadastroUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="asp\cadastroCurso.aspx.cs">
+    <Compile Include="cadastroCurso.aspx.cs">
       <DependentUpon>cadastroCurso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="asp\cadastroCurso.aspx.designer.cs">
+    <Compile Include="cadastroCurso.aspx.designer.cs">
       <DependentUpon>cadastroCurso.aspx</DependentUpon>
     </Compile>
-    <Compile Include="asp\listaCursos.aspx.cs">
+    <Compile Include="listaCursos.aspx.cs">
       <DependentUpon>listaCursos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="asp\listaCursos.aspx.designer.cs">
+    <Compile Include="listaCursos.aspx.designer.cs">
       <DependentUpon>listaCursos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="asp\Logar.aspx.cs">
+    <Compile Include="Logar.aspx.cs">
       <DependentUpon>Logar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="asp\Main.aspx.cs">
-      <DependentUpon>Main.aspx</DependentUpon>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="asp\MasterPage.master.cs">
+    <Compile Include="MasterPage.master.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
@@ -112,7 +112,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="asp\MasterPage.master" />
+    <Content Include="MasterPage.master" />
+    <None Include="Properties\PublishProfiles\educacesso.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -120,7 +121,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="asp\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
