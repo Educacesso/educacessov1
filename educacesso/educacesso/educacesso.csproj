@@ -57,11 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="cadastroUsuario.aspx" />
     <Content Include="cadastroCurso.aspx" />
-    <Content Include="listaCursos.aspx" />
-    <Content Include="Logar.aspx" />
+    <Content Include="cadastroUsuario.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="listaCursos.aspx" />
     <Content Include="css\login.css" />
     <Content Include="css\mainEstilo.css" />
     <Content Include="css\StyleSheet.css" />
@@ -70,19 +69,30 @@
     <Content Include="Imagens\escrevendoo.jpg" />
     <Content Include="Imagens\logoEducacesso.png" />
     <Content Include="js\curso.js" />
+    <Content Include="login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cadastroUsuario.aspx.cs">
-      <DependentUpon>cadastroUsuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="cadastroCurso.aspx.cs">
       <DependentUpon>cadastroCurso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="cadastroCurso.aspx.designer.cs">
       <DependentUpon>cadastroCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroUsuario.aspx.cs">
+      <DependentUpon>cadastroUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastroUsuario.aspx.designer.cs">
+      <DependentUpon>cadastroUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="listaCursos.aspx.cs">
       <DependentUpon>listaCursos.aspx</DependentUpon>
@@ -91,29 +101,37 @@
     <Compile Include="listaCursos.aspx.designer.cs">
       <DependentUpon>listaCursos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Logar.aspx.cs">
-      <DependentUpon>Logar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MasterPage.master.cs">
-      <DependentUpon>MasterPage.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="dao\ConnectionFactory.cs" />
     <Compile Include="dao\CursoDAO.cs" />
     <Compile Include="dao\UsuarioDAO.cs" />
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="modelo\Curso.cs" />
     <Compile Include="modelo\Pessoa.cs" />
     <Compile Include="modelo\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MasterPage.master" />
+    <Content Include="MasterPage.Master" />
+    <None Include="Properties\PublishProfiles\educacesso %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\educacesso %283%29.pubxml" />
+    <None Include="Properties\PublishProfiles\educacesso - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\educacesso - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\educacesso.pubxml" />
+    <None Include="Properties\PublishProfiles\portaleducacesso - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\portaleducacesso - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

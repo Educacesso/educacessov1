@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/MasterPage.master.cs" Inherits="MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="educacesso.MasterPage" %>
 
 <!DOCTYPE html>
 
@@ -21,7 +21,7 @@
                 <nav id="menu">
                     <h1>Menu Principal</h1>
                     <ul>
-                        <li class="active"><a href="Main.aspx">Home</a></li>
+                        <li class="active"><a href="index.aspx">Home</a></li>
                         <li><a href="listaCursos.aspx">Cursos</a></li>
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Fale Conosco</a></li>
@@ -30,7 +30,7 @@
                 <div id="menu-botao">
                     <ul>
                         <li><span class="esquerda"><a href="cadastroUsuario.aspx">Cadastre-se</a></span></li>
-                        <li><span class="direita"><a href="Logar.aspx">Login</a></span></li>
+                        <li><span class="direita"><a href="login.aspx">Login</a></span></li>
                     </ul>
                 </div>
 

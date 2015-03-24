@@ -5,10 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Cadastre_se : System.Web.UI.Page
+namespace educacesso
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class cadastroUsuario : System.Web.UI.Page
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

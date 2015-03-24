@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="~/index.aspx.cs" Inherits="Main" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="educacesso.index" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+	<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     
     <link href="../css/mainEstilo.css" rel="stylesheet" />
 </asp:Content>

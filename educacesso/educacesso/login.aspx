@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Logar.aspx.cs" Inherits="Logar" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="educacesso.login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="../css/login.css" rel="stylesheet" />
 
@@ -35,8 +34,7 @@
     <section id="rodape2">
 
         <h2> AINDA NÃO POSSUI CONTA NO EDUCACESSO ?</h2>
-        <a href="Cadastre-se.aspx"><h3> Cadastre-se Grátis</h3></a>
+        <a href="cadastroUsuario.aspx"><h3> Cadastre-se Grátis</h3></a>
     </section>
 
 </asp:Content>
-
