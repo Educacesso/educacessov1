@@ -61,6 +61,29 @@ namespace PortalEducacesso.dao
             {
                 throw new InvalidExpressionException("Erro ao Listar dados." + erro.Message);
             }
-        }        
+        }
+        public DataTable Search(string coluna, string valor)
+        {
+            conn = new ConnectionFactory().getConnection();
+            cmd = conn.CreateCommand();
+
+            string SQL = "SELECT * FROM curso WHERE @COLUNA LIKE @VALOR";
+
+            cmd.CommandText = SQL.Replace("@COLUNA", coluna);
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@VALOR", "%" + valor + "%");
+
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection = conn;
+
+            SqlDataReader DR;
+            DR = cmd.ExecuteReader();
+
+            DataTable dt = new DataTable();
+            dt.Load(DR);
+            conn.Close();
+
+            return dt;
+        }
     }
 }

@@ -59,7 +59,12 @@ namespace educacesso.asp
         protected void dropCategorias_SelectedIndexChanged(object sender, EventArgs e)
         {
             Selecionada = dropCategorias.Text;
-            carregaCursos(); 
+            // carregaCursos(); 
+        }
+
+        protected void txtPesquisa_TextChanged(object sender, EventArgs e)
+        {
+            cdao.Search("nmCurso", txtPesquisa.Text);
         }
     }
 }

@@ -14,10 +14,11 @@
                     </asp:DropDownList>
 
                 <br />
+        Pesquisa like: <asp:TextBox ID="txtPesquisa" runat="server" OnTextChanged="txtPesquisa_TextChanged"></asp:TextBox>
 
-        Cursos: <asp:DropDownList ID="dropCursos" runat="server"></asp:DropDownList>     
-        
         <br />
+        <asp:DropDownList ID="dropCursos" runat="server"></asp:DropDownList>  
+
         <br />
         <a href="cadastroCurso.aspx">Cadastrar curso</a>       
         <script src="../js/curso.js"></script>
