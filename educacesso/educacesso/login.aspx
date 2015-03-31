@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="educacesso.login" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <link href="../css/login.css" rel="stylesheet" />
 
@@ -18,14 +19,16 @@
 
     <aside id="lateral">
         <div>
-            <label for="cMail">E-mail:</label>
-            <input type="email" name="tMail" id="cMail" size="26" maxlength="40" required="required" />
+            <asp:Label runat="server" AssociatedControlID="cEmail">Email</asp:Label>
+            <asp:TextBox runat="server" ID="cEmail" TextMode="Email" />
+
         </div>
 
         <div>
-            <label for="cSenha">Senha:</label>
 
-            <input type="password" name="tSenha" id="cSenha" size="26" maxlength="8" placeholder="8 Digitos" required="required"/>
+            <asp:Label runat="server" AssociatedControlID="cSenha">Senha:</asp:Label>
+            <asp:TextBox runat="server" ID="cSenha" TextMode="Password" />
+
         </div>
         <a href="#"><span id="senha"><strong>Esqueceu sua senha ?</strong></span></a>
         <button class="btn-submit" id="btn-enviar"><strong>ENTRAR</strong></button>
@@ -33,8 +36,10 @@
 
     <section id="rodape2">
 
-        <h2> AINDA NÃO POSSUI CONTA NO EDUCACESSO ?</h2>
-        <a href="cadastroUsuario.aspx"><h3> Cadastre-se Grátis</h3></a>
+        <h2>AINDA NÃO POSSUI CONTA NO EDUCACESSO ?</h2>
+        <a href="cadastroUsuario.aspx">
+            <h3>Cadastre-se Grátis</h3>
+        </a>
     </section>
 
 </asp:Content>

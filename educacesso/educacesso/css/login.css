@@ -7,6 +7,10 @@ body {
     top: -30px;
     background-color: rgba(120,142,225,0.8);
 }
+.field-validation-error {
+    color: #e80c4d;
+    font-weight: bold;
+}
 
 div{
     display:block;
@@ -44,7 +48,7 @@ input:hover{
 	background-color: #dfe4e8;
 }
 
-button{
+button, input[type="submit"]{
      
     background-color:#3d246c;
     border:none;
@@ -62,12 +66,15 @@ button.btn-submit{
     top: 20px;
 }
 
-button.btn-submit1{
+input[type="submit"]{
     position:relative;
-    left: 580px;
+    top: 60px;
+    left: 680px;
 }
 
-button.btn-submit:hover, button.btn-submit1:hover{
+
+
+button.btn-submit:hover, button.btn-submit1:hover, input[type="submit"]:hover{
     background-color: #6549ad;
 }
 
@@ -82,7 +89,7 @@ button.btn-submit:hover, button.btn-submit1:hover{
     line-height: 1em;
     text-transform: uppercase;
     color: #fff;
-    top: 60px;
+    top: 80px;
 }
 
 .btn-fb:hover{
@@ -107,6 +114,7 @@ a {
 
 
 section#corpo{
+    top: -42px;
     position: relative;
     display: block;
     width: 320px;
@@ -125,7 +133,7 @@ section#corpo h1 span{
     color:  #3d276b;
    
     font-weight: bolder;
-    top: -62px;
+    top: -32px;
     
 }
 

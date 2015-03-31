@@ -16,22 +16,23 @@
 
     <aside id="lateral">
         <div>
-            <label for="cNome">Nome:</label>
-            <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo" required="required" />
-        <label for="cSenha"><span>Senha:</span></label>
-            <span><input type="password" name="tSenha" id="cSenha" size="20" maxlength="8" placeholder="8 Digitos" required="required"  /></span></div>
+            <asp:Label runat="server" AssociatedControlID="cNome">Nome:</asp:Label>
+            <asp:TextBox runat="server" ID="cNome" />
 
-  
+            <asp:Label runat="server" AssociatedControlID="cSenha"><span>Senha:</span></asp:Label>
+            <span>
+                <asp:TextBox runat="server" ID="cSenha" TextMode="Password"/></span>
+            </div>
         
         <div>
-            <label for="cMail">E-mail:</label>
-            <input type="email" name="tMail" id="cMail" size="20" maxlength="40" required="required" />
-            <label for="ccSenha">Confirmar Senha:</label>
-            <input type="password" name="ttSenha" id="ccSenha" size="20" maxlength="8" required="required" /></div>
-        
-        <button class="btn-submit1" id="btn-enviar"><strong>ENVIAR</strong></button>
-    </aside>
+            <asp:Label runat="server" AssociatedControlID="cMail">E-mail:</asp:Label>
+            <asp:TextBox runat="server" ID="cMail" TextMode="Email" />
 
+            <asp:Label runat="server" AssociatedControlID="ccSenha">Confirmar Senha:</asp:Label>
+            <asp:TextBox runat="server" ID="ccSenha" TextMode="Password" />
+            </div>
+    </aside>
+        <asp:Button runat="server" CommandName="MoveNext" Text="ENVIAR" CssClass="btn-submit1" />
     <section id="rodape2">
 
         <h2> JÁ POSSUI UMA CONTA NO EDUCACESSO?</h2>
