@@ -20,7 +20,10 @@
         <asp:DropDownList ID="dropCursos" runat="server"></asp:DropDownList>  
 
         <br />
-        <a href="cadastroCurso.aspx">Cadastrar curso</a>       
+        <a href="cadastroCurso.aspx">Cadastrar curso</a> 
+        <br />
+        <br />
+        <a href="homeCurso.aspx">Página incial de curso (TESTE)</a>     
         <script src="../js/curso.js"></script>
     </div>
     </form>
