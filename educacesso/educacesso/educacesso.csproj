@@ -38,8 +38,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CKEditor.NET">
-      <HintPath>..\..\..\..\Desktop\Nova pasta (2)\binCk\Debug\CKEditor.NET.dll</HintPath>
+    <Reference Include="CKEditor.NET, Version=3.6.6.2, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Binn\CKEditor.NET.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
@@ -60,6 +61,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Binn\CKEditor.NET.dll" />
+    <Content Include="Binn\CKEditor.NET.pdb" />
     <Content Include="cadastroCurso.aspx" />
     <Content Include="cadastroUsuario.aspx" />
     <Content Include="ckeditor\adapters\jquery.js" />
@@ -502,6 +505,7 @@
   <ItemGroup>
     <Content Include="MasterPage.Master" />
     <Content Include="ckeditor\.htaccess" />
+    <Content Include="Binn\CKEditor.NET.dll.refresh" />
     <None Include="Properties\PublishProfiles\educacesso %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\educacesso %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\educacesso - FTP.pubxml" />
