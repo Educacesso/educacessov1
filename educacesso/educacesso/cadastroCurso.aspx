@@ -1,5 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cadastroCurso.aspx.cs" Inherits="PortalEducacesso.asp.cadastroCurso" %>
 
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -10,6 +11,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        
         <ul class="lista">
         <li>
             <label for="txtNome">Nome:</label>
