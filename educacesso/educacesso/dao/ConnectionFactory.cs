@@ -25,7 +25,7 @@ namespace PortalEducacesso.dao
             }
             catch (SqlException erro)
             {
-                throw new NullReferenceException("Banco de dados não encontrado.");
+                throw new NullReferenceException("Banco de dados não encontrado." + erro);
             }
         }  
     }
