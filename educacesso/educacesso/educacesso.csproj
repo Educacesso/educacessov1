@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="cadastroCurso.aspx" />
     <Content Include="cadastroUsuario.aspx" />
+    <Content Include="homeCurso.aspx" />
     <Content Include="index.aspx" />
     <Content Include="listaCursos.aspx" />
     <Content Include="css\login.css" />
@@ -86,6 +87,13 @@
     </Compile>
     <Compile Include="cadastroUsuario.aspx.designer.cs">
       <DependentUpon>cadastroUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homeCurso.aspx.cs">
+      <DependentUpon>homeCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homeCurso.aspx.designer.cs">
+      <DependentUpon>homeCurso.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

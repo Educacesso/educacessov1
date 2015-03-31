@@ -40,6 +40,7 @@ namespace educacesso.asp
             dropCategorias.DataValueField = ds.Tables[0].Columns["cdCurso"].ToString();
             dropCategorias.DataSource = ds.Tables[0];
             dropCategorias.DataBind();
+            cdao.Search("nmCurso", "Delphi");
         }
 
         private void carregaCursos()
@@ -64,7 +65,7 @@ namespace educacesso.asp
 
         protected void txtPesquisa_TextChanged(object sender, EventArgs e)
         {
-            cdao.Search("nmCurso", txtPesquisa.Text);
+            
         }
     }
 }
