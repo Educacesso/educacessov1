@@ -13,5 +13,18 @@ namespace educacesso
         {
 
         }
+
+        protected void Unnamed5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                new UsuarioDAO().CadastrarUsuario(cNome.Text, cSenha.Text);
+            
+            }
+            catch (Exception erx)
+            {
+                throw new Exception(erx.ToString());
+            }
+        }
     }
 }

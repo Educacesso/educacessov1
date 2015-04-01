@@ -1,25 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Data;
+using System.Data.SqlClient;
 
-namespace PortalEducacesso.dao
-{
     public class ConnectionFactory
     {
-        private SqlConnection conn;
-
-        public SqlConnection Conn
-        {
-            get { return conn; }
-            set { conn = value; }
-        }
+        public string conexao = @"Data Source=a0ckgtrdxz.database.windows.net;Initial Catalog=educacesso;Persist Security Info=True;User ID=educacesso;Password=Educa102010";
+      
+        
         public SqlConnection getConnection()
         {
             try
             {
-                conn = new SqlConnection("Data Source=a0ckgtrdxz.database.windows.net;Initial Catalog=educacesso;Persist Security Info=True;User ID=educacesso;Password=Educa102010");
+                SqlConnection conn = new SqlConnection(new ConnectionFactory().conexao);      
                 conn.Open();
                 return conn;
             }
@@ -29,4 +24,3 @@ namespace PortalEducacesso.dao
             }
         }  
     }
-}

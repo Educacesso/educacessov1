@@ -48,7 +48,7 @@ input:hover{
 	background-color: #dfe4e8;
 }
 
-button, input[type="submit"]{
+input[type="submit"]{
      
     background-color:#3d246c;
     border:none;
@@ -59,17 +59,18 @@ button, input[type="submit"]{
     color: #ffffff;
     cursor: pointer;
 }
-button.btn-submit{
+input.btn-submit{
    
     position:relative;
     left: 100px;
-    top: 20px;
+    top: 52px;
 }
 
-input[type="submit"]{
+input.btn-submit1{
+   
     position:relative;
+    left: 700px;
     top: 60px;
-    left: 680px;
 }
 
 

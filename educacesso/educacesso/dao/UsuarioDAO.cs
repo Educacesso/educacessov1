@@ -7,10 +7,13 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
-namespace educacesso.dao
-{
+
     public class UsuarioDAO
     {
+        public string Codigo { get; set; }
+        public string Nome { get; set; }
+        public string Senha { get; set; }
+
         // Atributos de referência
         private SqlConnection conn;
         private SqlCommand cmd;
@@ -38,6 +41,24 @@ namespace educacesso.dao
             {
                 conn.Close();
             }
+
         }
+
+        public void CadastrarUsuario(String _nome, String _senha)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("INSERT INTO Usuario(USUARIO_ID, USUARIO_SENHA) VALUES(@NOME, @SENHA)", new ConnectionFactory().getConnection());
+                cmd.Parameters.AddWithValue("@NOME", _nome);
+                cmd.Parameters.AddWithValue("@SENHA", _senha);
+                cmd.ExecuteNonQuery();
+               
+            }
+            catch (Exception erx)
+            {//"Ocorreu um erro inesperado";//erx.ToString()
+                throw new Exception(erx.ToString());
+            }
+           
+        }
+
     }
-}

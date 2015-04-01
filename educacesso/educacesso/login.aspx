@@ -19,8 +19,8 @@
 
     <aside id="lateral">
         <div>
-            <asp:Label runat="server" AssociatedControlID="cEmail">Email</asp:Label>
-            <asp:TextBox runat="server" ID="cEmail" TextMode="Email" />
+            <asp:Label runat="server" AssociatedControlID="cNome">Nome</asp:Label>
+            <asp:TextBox runat="server" ID="cNome" />
 
         </div>
 
@@ -31,7 +31,9 @@
 
         </div>
         <a href="#"><span id="senha"><strong>Esqueceu sua senha ?</strong></span></a>
-        <button class="btn-submit" id="btn-enviar"><strong>ENTRAR</strong></button>
+        <asp:Button runat="server" Text="ENVIAR" CssClass="btn-submit" OnClick="btn_logar_Click" />
+        <asp:Label runat="server" ID="msg_logar"></asp:Label>
+        <asp:CheckBox ID="Persist" runat="server" />
     </aside>
 
     <section id="rodape2">

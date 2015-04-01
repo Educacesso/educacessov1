@@ -13,13 +13,13 @@ namespace educacesso {
     public partial class login {
         
         /// <summary>
-        /// cEmail control.
+        /// cNome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox cEmail;
+        protected global::System.Web.UI.WebControls.TextBox cNome;
         
         /// <summary>
         /// cSenha control.
@@ -29,5 +29,23 @@ namespace educacesso {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox cSenha;
+        
+        /// <summary>
+        /// msg_logar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label msg_logar;
+        
+        /// <summary>
+        /// Persist control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox Persist;
     }
 }

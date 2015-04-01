@@ -422,8 +422,17 @@
     <Content Include="ckeditor\skins\v2\skin.js" />
     <Content Include="ckeditor\skins\v2\templates.css" />
     <Content Include="ckeditor\themes\default\theme.js" />
+    <Content Include="css\inicioUser.css" />
     <Content Include="homeCurso.aspx" />
+    <Content Include="Imagens\icones\Book-2.png" />
+    <Content Include="Imagens\icones\book-256.png" />
+    <Content Include="Imagens\icones\circle-school-learn-study-subject-math-pencil-edit-256.png" />
+    <Content Include="Imagens\icones\school-learn-study-teacher-teaching-256.png" />
+    <Content Include="Imagens\icones\search-256.png" />
+    <Content Include="Imagens\icones\vector_313_08-256.png" />
+    <Content Include="Imagens\icones\vector_313_23-256.png" />
     <Content Include="index.aspx" />
+    <Content Include="inicio.aspx" />
     <Content Include="listaCursos.aspx" />
     <Content Include="css\login.css" />
     <Content Include="css\mainEstilo.css" />
@@ -466,6 +475,13 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="inicio.aspx.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inicio.aspx.designer.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
     <Compile Include="listaCursos.aspx.cs">
       <DependentUpon>listaCursos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -506,6 +522,7 @@
     <Content Include="MasterPage.Master" />
     <Content Include="ckeditor\.htaccess" />
     <Content Include="Binn\CKEditor.NET.dll.refresh" />
+    <Content Include="Imagens\icones\Thumbs.db" />
     <None Include="Properties\PublishProfiles\educacesso %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\educacesso %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\educacesso - FTP.pubxml" />
