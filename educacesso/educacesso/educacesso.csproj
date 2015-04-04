@@ -522,7 +522,6 @@
     <Content Include="MasterPage.Master" />
     <Content Include="ckeditor\.htaccess" />
     <Content Include="Binn\CKEditor.NET.dll.refresh" />
-    <Content Include="Imagens\icones\Thumbs.db" />
     <None Include="Properties\PublishProfiles\educacesso %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\educacesso %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\educacesso - FTP.pubxml" />
