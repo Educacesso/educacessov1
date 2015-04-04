@@ -38,6 +38,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.1.100, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SampleSite\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="CKEditor.NET, Version=3.6.6.2, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Binn\CKEditor.NET.dll</HintPath>
@@ -63,6 +67,7 @@
   <ItemGroup>
     <Content Include="Binn\CKEditor.NET.dll" />
     <Content Include="Binn\CKEditor.NET.pdb" />
+    <Content Include="Buscar.aspx" />
     <Content Include="cadastroCurso.aspx" />
     <Content Include="cadastroUsuario.aspx" />
     <Content Include="ckeditor\adapters\jquery.js" />
@@ -422,6 +427,7 @@
     <Content Include="ckeditor\skins\v2\skin.js" />
     <Content Include="ckeditor\skins\v2\templates.css" />
     <Content Include="ckeditor\themes\default\theme.js" />
+    <Content Include="css\Buscar.css" />
     <Content Include="css\inicioUser.css" />
     <Content Include="homeCurso.aspx" />
     <Content Include="Imagens\icones\Book-2.png" />
@@ -447,6 +453,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buscar.aspx.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buscar.aspx.designer.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="cadastroCurso.aspx.cs">
       <DependentUpon>cadastroCurso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

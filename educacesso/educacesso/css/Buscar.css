@@ -1,0 +1,35 @@
+﻿div#container{
+    height: 400px;
+}
+.completionList {
+    border: solid 1px Gray;
+    box-shadow: 1px 2px 7px rgba(26,07,245,0.6);
+    margin: 0px;
+    padding: 3px;
+    height: 80px;
+    overflow: auto;
+    background-color: #FFFFFF;
+    font-size: 14pt;
+}
+
+.listItem {
+    color: #6965a0;
+    
+}
+
+
+.itemHighlighted {
+ 
+   box-shadow: 1px 2px 7px rgba(26,07,245,0.6);
+   background-color:#ffffff;
+   color: #00aeff;
+}
+
+input{
+    position: relative;
+    width: 200px;
+    left: 300px;
+    height: 30px;
+    font-size: 12pt;
+    top: 130px;
+}
