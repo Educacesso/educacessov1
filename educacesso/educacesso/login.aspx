@@ -33,7 +33,7 @@
         <a href="#"><span id="senha"><strong>Esqueceu sua senha ?</strong></span></a>
         <asp:Button runat="server" Text="ENVIAR" CssClass="btn-submit" OnClick="btn_logar_Click" />
         <asp:Label runat="server" ID="msg_logar"></asp:Label>
-        <asp:CheckBox ID="Persist" runat="server" />
+        <asp:CheckBox ID="Persist" runat="server"  Visible="false"/>
     </aside>
 
     <section id="rodape2">
