@@ -449,6 +449,18 @@
     <Content Include="Imagens\logoEducacesso.png" />
     <Content Include="js\curso.js" />
     <Content Include="login.aspx" />
+    <Content Include="SampleSite\App_Data\CarsService.xml" />
+    <Content Include="SampleSite\App_Data\TodoItems.xml" />
+    <Content Include="SampleSite\AreaChart\AreaChart.aspx" />
+    <Content Include="SampleSite\AutoComplete\AutoComplete.asmx" />
+    <Content Include="SampleSite\AutoComplete\AutoComplete.aspx" />
+    <Content Include="SampleSite\bin\AjaxControlToolkit.dll" />
+    <Content Include="SampleSite\bin\AjaxControlToolkit.HtmlEditor.Sanitizer.dll" />
+    <Content Include="SampleSite\bin\AjaxControlToolkit.StaticResources.dll" />
+    <Content Include="SampleSite\Default.aspx" />
+    <Content Include="SampleSite\Global.asax" />
+    <Content Include="SampleSite\SampleSite.sln" />
+    <Content Include="SampleSite\StyleSheet.css" />
     <Content Include="TesteAddCurso.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -523,6 +535,32 @@
     <Compile Include="modelo\Pessoa.cs" />
     <Compile Include="modelo\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleSite\App_Code\AutoComplete.cs" />
+    <Compile Include="SampleSite\App_Code\CarsService.cs" />
+    <Compile Include="SampleSite\App_Code\DemoData.cs" />
+    <Compile Include="SampleSite\App_Code\InfoBlock.cs" />
+    <Compile Include="SampleSite\App_Code\NumericUpDown.cs" />
+    <Compile Include="SampleSite\App_Code\TodoItems.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TodoItems.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SampleSite\App_Code\TodoXmlDataObject.cs" />
+    <Compile Include="SampleSite\AreaChart\AreaChart.aspx.cs">
+      <DependentUpon>AreaChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleSite\AutoComplete\AutoComplete.aspx.cs">
+      <DependentUpon>AutoComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleSite\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleSite\Layout.master.cs">
+      <DependentUpon>Layout.master</DependentUpon>
+    </Compile>
+    <Compile Include="SampleSite\Samples.master.cs">
+      <DependentUpon>Samples.master</DependentUpon>
+    </Compile>
     <Compile Include="TesteAddCurso.aspx.cs">
       <DependentUpon>TesteAddCurso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -542,6 +580,32 @@
     <None Include="Properties\PublishProfiles\educacesso.pubxml" />
     <None Include="Properties\PublishProfiles\portaleducacesso - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\portaleducacesso - Web Deploy.pubxml" />
+    <Content Include="SampleSite\App_Code\TodoItems.xsc">
+      <DependentUpon>TodoItems.xsd</DependentUpon>
+    </Content>
+    <None Include="SampleSite\App_Code\TodoItems.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TodoItems.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="SampleSite\App_Code\TodoItems.xss">
+      <DependentUpon>TodoItems.xsd</DependentUpon>
+    </Content>
+    <Content Include="SampleSite\bin\Antlr3.Runtime.dll.refresh" />
+    <Content Include="SampleSite\bin\HtmlAgilityPack.dll.refresh" />
+    <Content Include="SampleSite\bin\Microsoft.ScriptManager.MSAjax.dll.refresh" />
+    <Content Include="SampleSite\bin\Microsoft.Web.Infrastructure.dll.refresh" />
+    <Content Include="SampleSite\bin\Newtonsoft.Json.dll.refresh" />
+    <Content Include="SampleSite\bin\System.Web.Optimization.dll.refresh" />
+    <Content Include="SampleSite\bin\WebGrease.dll.refresh" />
+    <Content Include="SampleSite\Layout.master" />
+    <Content Include="SampleSite\packages.config" />
+    <Content Include="SampleSite\Samples.master" />
+    <Content Include="SampleSite\Samples.sitemap" />
+    <Content Include="SampleSite\Web.config" />
+    <None Include="SampleSite\Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
