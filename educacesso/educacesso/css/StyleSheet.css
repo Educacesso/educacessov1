@@ -126,6 +126,8 @@ div#menu-botao li span.esquerda{
     text-align: center;
     line-height: 40px;
     
+   
+    
 }
 
 div#menu-botao li span.direita{
@@ -144,6 +146,8 @@ div#menu-botao li span.direita{
 
 div#menu-botao li span.esquerda a:hover{
     border: none;
+
+     
 }
 
 div#menu-botao li span.direita a:hover{
