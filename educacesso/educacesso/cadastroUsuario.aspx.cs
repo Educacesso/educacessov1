@@ -18,12 +18,14 @@ namespace educacesso
         {
             try
             {
-                new UsuarioDAO().CadastrarUsuario(cNome.Text, cSenha.Text);
+               lblmsg.Text = new UsuarioDAO().CadastrarUsuario(cNome.Text, cSenha.Text);
             
             }
             catch (Exception erx)
             {
                 throw new Exception(erx.ToString());
+                
+
             }
         }
     }

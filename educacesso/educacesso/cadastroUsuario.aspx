@@ -15,7 +15,9 @@
     </section>
 
     <aside id="lateral">
+        <asp:Label ID="lblmsg" runat="server" ForeColor="#606060" Font-Size="15pt"></asp:Label>
         <div>
+            
             <asp:Label runat="server" AssociatedControlID="cNome">Nome:</asp:Label>
             <asp:TextBox runat="server" ID="cNome" />
 
