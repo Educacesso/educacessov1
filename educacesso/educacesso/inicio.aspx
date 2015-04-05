@@ -12,7 +12,7 @@
 
    <h1>Escolha uma opção abaixo para começar :)</h1>
         <ul id="lista-ferramentas">
-            <li id="make_curso"><span>Crie seus cursos</span></li>
+           <a href="TesteAddCurso.aspx"> <li id="make_curso"><span>Crie seus cursos</span></li></a>
             <li id="view_curso"><span>Veja seus cursos</span></li>
             <a href="Buscar.aspx"><li id="search_curso"><span>Encontre cursos</span></li></a>
         </ul>

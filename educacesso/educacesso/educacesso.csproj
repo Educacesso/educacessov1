@@ -449,8 +449,6 @@
     <Content Include="Imagens\logoEducacesso.png" />
     <Content Include="js\curso.js" />
     <Content Include="login.aspx" />
-    <Content Include="SampleSite\AutoComplete\AutoComplete.asmx" />
-    <Content Include="SampleSite\AutoComplete\AutoComplete.aspx" />
     <Content Include="SampleSite\bin\AjaxControlToolkit.dll" />
     <Content Include="SampleSite\bin\AjaxControlToolkit.HtmlEditor.Sanitizer.dll" />
     <Content Include="SampleSite\bin\AjaxControlToolkit.StaticResources.dll" />
@@ -479,6 +477,7 @@
     <Compile Include="cadastroUsuario.aspx.designer.cs">
       <DependentUpon>cadastroUsuario.aspx</DependentUpon>
     </Compile>
+    <Compile Include="dao\CursoAddDAO.cs" />
     <Compile Include="homeCurso.aspx.cs">
       <DependentUpon>homeCurso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -528,10 +527,6 @@
     <Compile Include="modelo\Pessoa.cs" />
     <Compile Include="modelo\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SampleSite\AutoComplete\AutoComplete.aspx.cs">
-      <DependentUpon>AutoComplete.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="TesteAddCurso.aspx.cs">
       <DependentUpon>TesteAddCurso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

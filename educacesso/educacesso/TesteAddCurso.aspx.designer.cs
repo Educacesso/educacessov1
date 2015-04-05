@@ -13,6 +13,24 @@ namespace educacesso {
     public partial class TesteAddCurso {
         
         /// <summary>
+        /// txt_Titulo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_Titulo;
+        
+        /// <summary>
+        /// txt_Resumo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_Resumo;
+        
+        /// <summary>
         /// CKEditorControl1 control.
         /// </summary>
         /// <remarks>
@@ -20,5 +38,14 @@ namespace educacesso {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::CKEditor.NET.CKEditorControl CKEditorControl1;
+        
+        /// <summary>
+        /// btn_cadastrar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_cadastrar;
     }
 }
