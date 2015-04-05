@@ -449,6 +449,7 @@
     <Content Include="Imagens\logoEducacesso.png" />
     <Content Include="js\curso.js" />
     <Content Include="login.aspx" />
+    <Content Include="MeusCursos.aspx" />
     <Content Include="SampleSite\bin\AjaxControlToolkit.dll" />
     <Content Include="SampleSite\bin\AjaxControlToolkit.HtmlEditor.Sanitizer.dll" />
     <Content Include="SampleSite\bin\AjaxControlToolkit.StaticResources.dll" />
@@ -522,6 +523,13 @@
     </Compile>
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MeusCursos.aspx.cs">
+      <DependentUpon>MeusCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MeusCursos.aspx.designer.cs">
+      <DependentUpon>MeusCursos.aspx</DependentUpon>
     </Compile>
     <Compile Include="modelo\Curso.cs" />
     <Compile Include="modelo\Pessoa.cs" />

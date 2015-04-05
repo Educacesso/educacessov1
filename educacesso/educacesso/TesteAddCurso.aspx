@@ -9,4 +9,5 @@
     <label>Resumo</label> <asp:TextBox ID="txt_Resumo" runat="server"></asp:TextBox>
     <center><CKEditor:CKEditorControl ID="CKEditorControl1" runat="server" Width="700px"></CKEditor:CKEditorControl></center>
     <asp:Button ID="btn_cadastrar" runat="server" Text="Enviar" OnClick="btn_cadastrar_Click" />
+    <a href="inicio.aspx">Cancelar</a>
 </asp:Content>

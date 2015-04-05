@@ -22,7 +22,8 @@ namespace educacesso
         public static List<string> GetConteudo(string prefixText)
         {
             DataTable dt = new DataTable();
-            SqlCommand cmd = new SqlCommand("SELECT USUARIO_ID FROM Usuario WHERE USUARIO_ID like @NAME+'%'", new ConnectionFactory().getConnection());
+            //SqlCommand cmd = new SqlCommand("SELECT USUARIO_ID FROM Usuario WHERE USUARIO_ID like @NAME+'%'", new ConnectionFactory().getConnection());
+            SqlCommand cmd = new SqlCommand("SELECT TITULO_CURSO FROM tblCurso WHERE TITULO_CURSO like @NAME+'%'", new ConnectionFactory().getConnection());
             cmd.Parameters.AddWithValue("@NAME", prefixText);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);

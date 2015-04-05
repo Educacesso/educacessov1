@@ -22,5 +22,7 @@ using System.Data.SqlClient;
             {
                 throw new NullReferenceException("Banco de dados não encontrado." + erro);
             }
-        }  
+        }
+
+    
     }
