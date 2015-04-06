@@ -8,12 +8,6 @@
     
         <asp:label ID="titulo" runat="server" CssClass="titulo"> </asp:label>
     
-    <br />
-    <br />
-
-
-    <div id="tamanho">
-
     <asp:MultiView ID="MultiView1" runat="server">
         <asp:View ID="view1" runat="server">
             <div class="container">
@@ -48,6 +42,6 @@
     </asp:MultiView>
     
         <asp:Button ID="btn_avancar" runat="server" Text="Avançar" OnClick="btn_avancar_Click" CssClass="button"/>
-   </div>
+  
     <a href="inicio.aspx">Cancelar</a>
 </asp:Content>

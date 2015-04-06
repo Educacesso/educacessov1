@@ -12,6 +12,7 @@ namespace educacesso
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             titulo.Text = "Crie um curso para compartilhar com outros usuários aqui !";
             if(MultiView1.ActiveViewIndex < 0)
             { 
