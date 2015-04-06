@@ -5,9 +5,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:Button ID="Submit1" OnClick="Signout_Click" Text="Sair" runat="server" />
-    <span id="label">
-        <asp:Label ID="Bemvindo" runat="server" /></span>
+    
 
 
    <h1>Escolha uma opção abaixo para começar :)</h1>

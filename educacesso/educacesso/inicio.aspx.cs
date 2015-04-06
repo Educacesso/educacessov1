@@ -12,13 +12,9 @@ namespace educacesso
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Bemvindo.Text = "Bem Vindo, " + Context.User.Identity.Name;
+           
         }
 
-        protected void Signout_Click(object sender, EventArgs e)
-        {
-            FormsAuthentication.SignOut();
-            Response.Redirect("index.aspx");
-        }
+        
     }
 }

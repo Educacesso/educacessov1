@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    
+
     <link href="../css/StyleSheet.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -21,16 +21,46 @@
                 <nav id="menu">
                     <h1>Menu Principal</h1>
                     <ul>
-                        <li class="active"><a href="index.aspx">Home</a></li>
-                        <li><a href="listaCursos.aspx">Cursos</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Fale Conosco</a></li>
+                        <asp:LoginView ID="LoginView2" runat="server" EnableTheming="true">
+                            <AnonymousTemplate>
+                                <li class="active"><a href="index.aspx">Home</a></li>
+                                <li><a href="listaCursos.aspx">Cursos</a></li>
+                                <li><a href="#">Sobre</a></li>
+                                <li><a href="#">Fale Conosco</a></li>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <li class="active"><a href="inicio.aspx">Inicio</a></li>
+                                <li><a href="TesteAddCurso.aspx">Crie Cursos</a></li>
+                                <li><a href="MeusCursos.aspx">Meus Cursos</a></li>
+                                <li><a href="Buscar.aspx">Pesquise Cursos</a></li>
+                                
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+
                     </ul>
                 </nav>
                 <div id="menu-botao">
                     <ul>
-                        <li><span class="esquerda"><a href="cadastroUsuario.aspx">Cadastre-se</a></span></li>
-                        <li><span class="direita"><a href="login.aspx">Login</a></span></li>
+
+
+                        <asp:LoginView ID="LoginView1" runat="server" EnableTheming="true">
+                            <AnonymousTemplate>
+                                <li><span class="esquerda"><a href="cadastroUsuario.aspx">Cadastre-se</a></span></li>
+                                <li><span class="direita"><a href="login.aspx">Login</a></span></li>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <div class="MenuBemVindo">
+                                    <ul>
+                                        <li>Bem Vindo,
+                                            <asp:Label runat="server"><span id="nameUser"><asp:LoginName runat="server" />!</span></asp:Label></li>
+                                        <li><span>
+                                            <asp:Button OnClick="Signout_Click" Text="Sair" runat="server" /></span></li>
+                                        <!--<li><span><a href="#" id="LogOff" onclick="Signout_Click">Sair</a></span></li>-->
+                                    </ul>
+                                </div>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+
                     </ul>
                 </div>
 
