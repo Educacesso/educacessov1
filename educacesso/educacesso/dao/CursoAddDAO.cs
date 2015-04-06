@@ -17,6 +17,7 @@ namespace educacesso
         public int Contador { get; set; }
         public int Gostei { get; set; }
 
+
         public static string CurrentUserName
         {
             get

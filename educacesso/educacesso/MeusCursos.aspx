@@ -6,12 +6,13 @@
 
     <h1>MEUS CURSOS PUBLICADOS</h1>
 
-    <center><asp:GridView ID="gvw_cursos" runat="server" EmptyDataText="Nenhum Registro" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
+    <center><asp:GridView ID="gvw_cursos" runat="server" EmptyDataText="Nenhum Registro" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvw_cursos_SelectedIndexChanged">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
             <asp:BoundField DataField="TITULO_CURSO" HeaderText="Titulo" />
             <asp:BoundField DataField="RESUMO_CURSO" HeaderText="Resumo" />
             <asp:BoundField DataField="dataCadastro" HeaderText="Data Cadastro" />
+            <asp:CommandField ButtonType="Button" ShowDeleteButton="True"/>
         </Columns>
         <EditRowStyle BackColor="#999999" />
         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
