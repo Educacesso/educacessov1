@@ -26,7 +26,9 @@
                 <h3>Para continuar, insira um conteudo com a ajuda do editor abaixo</h3>
 
             </div>
-            <center><CKEditor:CKEditorControl ID="CKEditorControl1" runat="server" Width="770px" Height="380px"></CKEditor:CKEditorControl></center>
+            <div id="espaco">
+            <center><CKEditor:CKEditorControl ID="CKEditorControl1" runat="server" Width="770px" Height="380px" ></CKEditor:CKEditorControl></center>
+                </div>
         </asp:View>
 
         <asp:View ID="view3" runat="server">
