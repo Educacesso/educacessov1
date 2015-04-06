@@ -431,6 +431,8 @@
     <Content Include="css\CadastroCursoCss.css" />
     <Content Include="css\inicioUser.css" />
     <Content Include="homeCurso.aspx" />
+    <Content Include="Imagens\icones\arrow-circle-right-2-64.png" />
+    <Content Include="Imagens\icones\arrow_right-48.png" />
     <Content Include="Imagens\icones\Book-2.png" />
     <Content Include="Imagens\icones\book-256.png" />
     <Content Include="Imagens\icones\circle-school-learn-study-subject-math-pencil-edit-256.png" />

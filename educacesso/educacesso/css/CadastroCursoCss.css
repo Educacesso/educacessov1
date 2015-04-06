@@ -9,7 +9,7 @@ body {
     background-color: #d1fb67;
 }
 
-span label#titulo{
+.titulo{
     position:relative;
     font-size: 23pt;
     font-weight: bold;
@@ -18,8 +18,8 @@ span label#titulo{
     top: 10px;
     margin-bottom: 70px;
     left: 20px;
-    
 }
+
 
 label{
     font-size: 14.5pt;
@@ -31,12 +31,12 @@ label{
 
 
 
-div#container{
+div.container{
     border-top: 1px solid #6965a0;
     width: 1100px;
     text-align: center;
 }
-div#container h3{
+div.container h3{
     font-size: 15pt;
     color: #808080;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -44,9 +44,54 @@ div#container h3{
     
 }
 
-Input{
+div.container h3#fim{
+    margin-top: 58px;
+    font-size: 19pt;
+    color: #817c7c;
+    font-family:'Questrial', sans-serif;
+}
+
+Input[type="text"]{
     height: 27px;
     margin-top: 20px;
     margin-bottom: 50px;
+    /**/
+    /*"Imagens/icones/arrow-circle-right-2-64.png"*/
+}
 
+
+
+.button{
+    position: relative;
+    left:880px;
+    top: 30px;    
+    background-color: #33cbb4;  
+    box-shadow: 1px 3px 1px #28b06d;  
+    border: none;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    padding: 14px 9px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12pt;
+    line-height: 14px;
+    margin-bottom: 100px;
+}
+
+.buttonSubmit{
+    position:relative;
+    top: 30px;
+    left: 520px;
+    background-color: #33cbb4;  
+    box-shadow: 0px 2px 0px #28b06d; 
+    border:none;
+    border-radius: 3px;
+    padding: 15px 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12pt;
+    line-height: 14px;
+    margin-bottom: 80px;
 }
