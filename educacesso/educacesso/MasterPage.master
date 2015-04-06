@@ -26,7 +26,6 @@
                                 <li class="active"><a href="index.aspx">Home</a></li>
                                 <li><a href="listaCursos.aspx">Cursos</a></li>
                                 <li><a href="#">Sobre</a></li>
-                                <li><a href="#">Fale Conosco</a></li>
                             </AnonymousTemplate>
                             <LoggedInTemplate>
                                 <li class="active"><a href="inicio.aspx">Inicio</a></li>
