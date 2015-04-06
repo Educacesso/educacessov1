@@ -428,6 +428,7 @@
     <Content Include="ckeditor\skins\v2\templates.css" />
     <Content Include="ckeditor\themes\default\theme.js" />
     <Content Include="css\Buscar.css" />
+    <Content Include="css\CadastroCursoCss.css" />
     <Content Include="css\inicioUser.css" />
     <Content Include="homeCurso.aspx" />
     <Content Include="Imagens\icones\Book-2.png" />

@@ -13,6 +13,24 @@ namespace educacesso {
     public partial class TesteAddCurso {
         
         /// <summary>
+        /// MultiView1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.MultiView MultiView1;
+        
+        /// <summary>
+        /// view1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View view1;
+        
+        /// <summary>
         /// txt_Titulo control.
         /// </summary>
         /// <remarks>
@@ -31,6 +49,15 @@ namespace educacesso {
         protected global::System.Web.UI.WebControls.TextBox txt_Resumo;
         
         /// <summary>
+        /// view2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View view2;
+        
+        /// <summary>
         /// CKEditorControl1 control.
         /// </summary>
         /// <remarks>
@@ -40,6 +67,15 @@ namespace educacesso {
         protected global::CKEditor.NET.CKEditorControl CKEditorControl1;
         
         /// <summary>
+        /// view3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View view3;
+        
+        /// <summary>
         /// btn_cadastrar control.
         /// </summary>
         /// <remarks>
@@ -47,5 +83,14 @@ namespace educacesso {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_cadastrar;
+        
+        /// <summary>
+        /// btn_avancar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_avancar;
     }
 }
