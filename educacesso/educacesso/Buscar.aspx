@@ -83,6 +83,7 @@
                 </tr>
             </SelectedItemTemplate>
         </asp:ListView>
+        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
         <a href="inicio.aspx">Voltar Inicio</a>
     </div>
 </asp:Content>

@@ -36,10 +36,16 @@ namespace educacesso
             return lCursos;
         }
 
-        protected void btn_buscar_Click(object sender, EventArgs e)
+        public void btn_buscar_Click(object sender, EventArgs e)
         {
+            
+
+            // cmd.Parameters.AddWithValue("@TITULO_CURSO", new CursoAddDAO().BuscarUsuario());
+            //gvw_cursos.DataSource = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            //gvw_cursos.DataBind();
+            /*
             ListView.DataSource = new CursoAddDAO().Pesquisar(text1.Text);
-            ListView.DataBind();
+            ListView.DataBind();*/
         }
 
       
@@ -57,6 +63,15 @@ namespace educacesso
 
             }
 
+       }
+
+       protected void Button1_Click(object sender, EventArgs e)
+       {
+           SqlCommand cmd = new SqlCommand("SELECT * FROM tblCurso WHERE TITULO_CURSO LIKE '%" + text1.Text + "%'", new ConnectionFactory().getConnection());
+
+           ListView.DataSource = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+
+           ListView.DataBind();
        }
 
     }
