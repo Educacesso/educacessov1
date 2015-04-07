@@ -23,6 +23,7 @@
                 CompletionListHighlightedItemCssClass="itemHighlighted">
             </cc1:AutoCompleteExtender>
         </div>
+
         <asp:ListView ID="ListView" runat="server" OnSelectedIndexChanging="ListView_SelectedIndexChanging" ItemPlaceholderID="itemContainer">
             <EmptyDataTemplate>
                 <tr>
@@ -40,7 +41,7 @@
             <ItemTemplate>
                 <table>
                     <tr runat="server">
-                        <td>
+                        <td id="cod">
                             <label>Cod: </label>
                             <asp:Label ID="id_curso" runat="server" Text='<%#Eval("COD_CURSO") %>' />
 
@@ -77,15 +78,11 @@
                     <td>
                         <asp:Label ID="resumoCurso" runat="server" Text='<%#Eval("RESUMO_CURSO") %>' />
                     </td>
-                    <td>
-                        <asp:Label ID="conteudoCurso" runat="server" Text='<%#Eval("CONTEUDO_CURSO") %>' />
-                    </td>
+                    
 
                 </tr>
             </SelectedItemTemplate>
         </asp:ListView>
-
-        <asp:Button ID="btn_buscar" runat="server" Text="Buscar" OnClick="btn_buscar_Click" Width="0" Height="0" BackColor="White" Visible="false" />
         <a href="inicio.aspx">Voltar Inicio</a>
     </div>
 </asp:Content>

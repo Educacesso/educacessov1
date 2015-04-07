@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using System.Web.Security;
 
 
 namespace educacesso
@@ -37,12 +38,6 @@ namespace educacesso
 
         protected void btn_buscar_Click(object sender, EventArgs e)
         {
-            Carregar_Cursos();
-        }
-
-        void Carregar_Cursos()
-        {
-  
             ListView.DataSource = new CursoAddDAO().Pesquisar(text1.Text);
             ListView.DataBind();
         }
@@ -60,7 +55,6 @@ namespace educacesso
                 int a = int.Parse(dtSimplesText.Text);
                 Response.Redirect("Curso.aspx?COD_CURSO=" +a+"");
 
-               // ListView.Items.Clear();
             }
 
        }

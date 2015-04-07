@@ -90,27 +90,24 @@ input:active{
 
 
 .lista table{
+    position:relative;
     border: 1px solid #606060;
     border-spacing: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    
     
 }
 
-.lista td{
-    position:relative;
-    width: 400px;
-    border: 1px solid #606060;
-    
-   padding: 10px;
-}
 
-.lista li
+.lista td
 {
+   
     text-align:left;
-   width:100px;
-  display: inline;
-  float: left;
-  margin-left: 15px;
-  margin-bottom: 15px;
+    width:150px;
+    float: left;
+    border: 1px solid #606060;
+    color: #ed6f70;
+    padding: 5px;
+    vertical-align: top;
+    font-weight: bold;
 }
+
