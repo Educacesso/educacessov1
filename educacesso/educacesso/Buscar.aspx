@@ -23,43 +23,45 @@
                 CompletionListHighlightedItemCssClass="itemHighlighted">
             </cc1:AutoCompleteExtender>
         </div>
-        <asp:ListView ID="ListView" runat="server" OnSelectedIndexChanging="ListView_SelectedIndexChanging">
+        <asp:ListView ID="ListView" runat="server" OnSelectedIndexChanging="ListView_SelectedIndexChanging" ItemPlaceholderID="itemContainer">
             <EmptyDataTemplate>
                 <tr>
                     <td>Nenhum curso encontrado!
                     </td>
                 </tr>
             </EmptyDataTemplate>
+           
             <LayoutTemplate>
-                <table cellpadding="2" border="1" runat="server" id="tblContacts" width="640px">
-                    <tr runat="server" id="itemPlaceholder" />
-                </table>
-
-            </LayoutTemplate>
+              <ul class="lista">
+                  <asp:PlaceHolder ID="itemContainer" runat="server" />
+              </ul>
+          </LayoutTemplate>
 
             <ItemTemplate>
+                <table>
+                    <tr runat="server">
+                        <td>
+                            <label>Cod: </label>
+                            <asp:Label ID="id_curso" runat="server" Text='<%#Eval("COD_CURSO") %>' />
 
-                <tr runat="server">
-                    <td>
-                        <asp:Label ID="id_curso" runat="server" Text='<%#Eval("COD_CURSO") %>' />
-
-                    </td>
-
-                    <td>
-                        <asp:Label ID="FirstNameLabel" runat="server" Text='<%#Eval("TITULO_CURSO") %>' />
+                        </td>
+                        
+                        <td>
+                           
+                            <asp:Label ID="tituloLabel" runat="server" Text='<%#Eval("TITULO_CURSO") %>' />
 
 
-                    </td>
-                    <td>
-                        <asp:Label ID="LastNameLabel" runat="server" Text='<%#Eval("RESUMO_CURSO") %>'/>
-                    </td>
-                    <td>
-                        <asp:Label ID="EmailLabel" runat="server" Text='<%#Eval("CONTEUDO_CURSO") %>' />
-                    </td>
-                    <td>
-                        <asp:LinkButton ID="SelectButton" runat="server" CommandName="Select" Text="Select"/>
-                    </td>
-                </tr>
+                        </td>
+                        <td>
+                            
+                            <asp:Label ID="resumoLabel" runat="server" Text='<%#Eval("RESUMO_CURSO") %>' />
+                        </td>
+                       
+                        <td>
+                            <asp:LinkButton ID="SelectButton" runat="server" CommandName="Select" Text="Select" />
+                        </td>
+                    </tr>
+                </table>
             </ItemTemplate>
             <SelectedItemTemplate>
                 <tr runat="server">
@@ -69,21 +71,21 @@
                     </td>
 
                     <td>
-                        <asp:Label ID="FirstNameLabel" runat="server" Text='<%#Eval("TITULO_CURSO") %>' />
+                        <asp:Label ID="tituloCurso" runat="server" Text='<%#Eval("TITULO_CURSO") %>' />
 
                     </td>
                     <td>
-                        <asp:Label ID="LastNameLabel" runat="server" Text='<%#Eval("RESUMO_CURSO") %>' />
+                        <asp:Label ID="resumoCurso" runat="server" Text='<%#Eval("RESUMO_CURSO") %>' />
                     </td>
                     <td>
-                        <asp:Label ID="EmailLabel" runat="server" Text='<%#Eval("CONTEUDO_CURSO") %>' />
+                        <asp:Label ID="conteudoCurso" runat="server" Text='<%#Eval("CONTEUDO_CURSO") %>' />
                     </td>
 
                 </tr>
             </SelectedItemTemplate>
         </asp:ListView>
 
-        <asp:Button ID="btn_buscar" runat="server" Text="Buscar" OnClick="btn_buscar_Click" Width="0" Height="0" BackColor="White" Visible="false"/>
+        <asp:Button ID="btn_buscar" runat="server" Text="Buscar" OnClick="btn_buscar_Click" Width="0" Height="0" BackColor="White" Visible="false" />
         <a href="inicio.aspx">Voltar Inicio</a>
     </div>
 </asp:Content>

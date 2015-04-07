@@ -86,3 +86,31 @@ input{
 input:active{
     border-color: none;
 }
+
+
+
+.lista table{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.lista td{
+    position:relative;
+    width: 400px;
+    border: 1px solid #606060;
+    
+   padding: 10px;
+}
+
+.lista li
+{
+    text-align:left;
+   width:100px;
+  display: inline;
+  float: left;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
