@@ -55,8 +55,11 @@ namespace educacesso
 
             if (ListView.Items.Count > 0)
             {
-                Label dtSimplesText = ListView.Items[i].FindControl("FirstNameLabel") as Label;
-                lblteste.Text = dtSimplesText.Text;
+                Label dtSimplesText = ListView.Items[i].FindControl("id_curso") as Label;
+                
+                int a = int.Parse(dtSimplesText.Text);
+                Response.Redirect("Curso.aspx?COD_CURSO=" +a+"");
+
                // ListView.Items.Clear();
             }
 

@@ -41,6 +41,11 @@
 
                 <tr runat="server">
                     <td>
+                        <asp:Label ID="id_curso" runat="server" Text='<%#Eval("COD_CURSO") %>' />
+
+                    </td>
+
+                    <td>
                         <asp:Label ID="FirstNameLabel" runat="server" Text='<%#Eval("TITULO_CURSO") %>' />
 
 
@@ -57,7 +62,12 @@
                 </tr>
             </ItemTemplate>
             <SelectedItemTemplate>
-                <tr runat="server" style="background-color: #B0C4DE">
+                <tr runat="server">
+                    <td>
+                        <asp:Label ID="id_curso" runat="server" Text='<%#Eval("COD_CURSO") %>' />
+
+                    </td>
+
                     <td>
                         <asp:Label ID="FirstNameLabel" runat="server" Text='<%#Eval("TITULO_CURSO") %>' />
 
@@ -73,10 +83,6 @@
             </SelectedItemTemplate>
         </asp:ListView>
 
-      
-        <asp:Label ID="lblteste" runat="server">
-            sera que alera
-        </asp:Label>
         <asp:Button ID="btn_buscar" runat="server" Text="Buscar" OnClick="btn_buscar_Click" Width="0" Height="0" BackColor="White" Visible="false"/>
         <a href="inicio.aspx">Voltar Inicio</a>
     </div>

@@ -68,8 +68,11 @@ namespace educacesso
         public DataSet Pesquisar(string _txtpesq)
         {
             return new ConnectionFactory().AbrirTabela("SELECT * FROM tblCurso WHERE TITULO_CURSO LIKE '%" + _txtpesq + "%'");
+        }
 
-
+        public DataSet ExibirCurso(string cod)
+        {
+            return new ConnectionFactory().AbrirTabela("SELECT * FROM tblCurso WHERE COD_CURSO=" + cod);
         }
     }
 }

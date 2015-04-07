@@ -430,6 +430,7 @@
     <Content Include="css\Buscar.css" />
     <Content Include="css\CadastroCursoCss.css" />
     <Content Include="css\inicioUser.css" />
+    <Content Include="Curso.aspx" />
     <Content Include="homeCurso.aspx" />
     <Content Include="Imagens\icones\Book-2.png" />
     <Content Include="Imagens\icones\book-256.png" />
@@ -479,6 +480,13 @@
     </Compile>
     <Compile Include="cadastroUsuario.aspx.designer.cs">
       <DependentUpon>cadastroUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Curso.aspx.cs">
+      <DependentUpon>Curso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Curso.aspx.designer.cs">
+      <DependentUpon>Curso.aspx</DependentUpon>
     </Compile>
     <Compile Include="dao\CursoAddDAO.cs" />
     <Compile Include="homeCurso.aspx.cs">
