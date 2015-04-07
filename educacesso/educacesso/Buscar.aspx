@@ -11,19 +11,73 @@
         <div>
             <h1>Encontre cursos de outros usuários -></h1>
             <div id="inside-buscar">
-                <asp:TextBox ID="text1" runat="server"></asp:TextBox><img src="Imagens/icones/Search-3-64.png" />
+                <asp:TextBox ID="text1" runat="server" OnTextChanged="btn_buscar_Click"></asp:TextBox><img src="Imagens/icones/Search-3-64.png" />
             </div>
             <cc1:AutoCompleteExtender ID="AutoCompleteExtender1" runat="server"
                 TargetControlID="text1"
                 EnableCaching="true"
                 MinimumPrefixLength="1"
-               
                 ServiceMethod="GetConteudo"
                 CompletionListCssClass="completionList"
                 CompletionListItemCssClass="listItem"
                 CompletionListHighlightedItemCssClass="itemHighlighted">
             </cc1:AutoCompleteExtender>
         </div>
+        <asp:ListView ID="ListView" runat="server" OnSelectedIndexChanging="ListView_SelectedIndexChanging">
+            <EmptyDataTemplate>
+                <tr>
+                    <td>Nenhum curso encontrado!
+                    </td>
+                </tr>
+            </EmptyDataTemplate>
+            <LayoutTemplate>
+                <table cellpadding="2" border="1" runat="server" id="tblContacts" width="640px">
+                    <tr runat="server" id="itemPlaceholder" />
+                </table>
+
+            </LayoutTemplate>
+
+            <ItemTemplate>
+
+                <tr runat="server">
+                    <td>
+                        <asp:Label ID="FirstNameLabel" runat="server" Text='<%#Eval("TITULO_CURSO") %>' />
+
+
+                    </td>
+                    <td>
+                        <asp:Label ID="LastNameLabel" runat="server" Text='<%#Eval("RESUMO_CURSO") %>'/>
+                    </td>
+                    <td>
+                        <asp:Label ID="EmailLabel" runat="server" Text='<%#Eval("CONTEUDO_CURSO") %>' />
+                    </td>
+                    <td>
+                        <asp:LinkButton ID="SelectButton" runat="server" CommandName="Select" Text="Select"/>
+                    </td>
+                </tr>
+            </ItemTemplate>
+            <SelectedItemTemplate>
+                <tr runat="server" style="background-color: #B0C4DE">
+                    <td>
+                        <asp:Label ID="FirstNameLabel" runat="server" Text='<%#Eval("TITULO_CURSO") %>' />
+
+                    </td>
+                    <td>
+                        <asp:Label ID="LastNameLabel" runat="server" Text='<%#Eval("RESUMO_CURSO") %>' />
+                    </td>
+                    <td>
+                        <asp:Label ID="EmailLabel" runat="server" Text='<%#Eval("CONTEUDO_CURSO") %>' />
+                    </td>
+
+                </tr>
+            </SelectedItemTemplate>
+        </asp:ListView>
+
+      
+        <asp:Label ID="lblteste" runat="server">
+            sera que alera
+        </asp:Label>
+        <asp:Button ID="btn_buscar" runat="server" Text="Buscar" OnClick="btn_buscar_Click" Width="0" Height="0" BackColor="White" Visible="false"/>
         <a href="inicio.aspx">Voltar Inicio</a>
     </div>
 </asp:Content>

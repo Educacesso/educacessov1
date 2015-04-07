@@ -64,5 +64,12 @@ namespace educacesso
             return Codigo;
 
         }
+
+        public DataSet Pesquisar(string _txtpesq)
+        {
+            return new ConnectionFactory().AbrirTabela("SELECT * FROM tblCurso WHERE TITULO_CURSO LIKE '%" + _txtpesq + "%'");
+
+
+        }
     }
 }

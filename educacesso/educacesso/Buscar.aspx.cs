@@ -34,5 +34,33 @@ namespace educacesso
             }
             return lCursos;
         }
+
+        protected void btn_buscar_Click(object sender, EventArgs e)
+        {
+            Carregar_Cursos();
+        }
+
+        void Carregar_Cursos()
+        {
+  
+            ListView.DataSource = new CursoAddDAO().Pesquisar(text1.Text);
+            ListView.DataBind();
+        }
+
+      
+       protected void ListView_SelectedIndexChanging(object sender, ListViewSelectEventArgs e)
+        {
+            ListView.SelectedIndex = e.NewSelectedIndex;
+            int i = ListView.SelectedIndex;
+
+            if (ListView.Items.Count > 0)
+            {
+                Label dtSimplesText = ListView.Items[i].FindControl("FirstNameLabel") as Label;
+                lblteste.Text = dtSimplesText.Text;
+               // ListView.Items.Clear();
+            }
+
+       }
+
     }
 }

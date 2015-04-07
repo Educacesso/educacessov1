@@ -24,5 +24,14 @@ using System.Data.SqlClient;
             }
         }
 
+        public DataSet AbrirTabela(string sqltxt)
+        {
+            SqlConnection cnx = new SqlConnection(conexao);
+            cnx.Open();
+            SqlDataAdapter adp = new SqlDataAdapter(sqltxt, cnx);
+            DataSet dst = new DataSet();
+            adp.Fill(dst);
+            return dst;
+        }
     
     }
