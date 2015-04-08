@@ -15,10 +15,8 @@ namespace educacesso
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*if(User.Identity.IsAuthenticated !=true)
-                Response.Redirect("login.aspx");*/
-            
-
+            if(User.Identity.IsAuthenticated !=true)
+                Response.Redirect("login.aspx");
         }
 
         [System.Web.Script.Services.ScriptMethod()]

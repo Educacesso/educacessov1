@@ -12,6 +12,8 @@ namespace educacesso
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (User.Identity.IsAuthenticated != true)
+                Response.Redirect("login.aspx");
             
             titulo.Text = "Crie um curso para compartilhar com outros usuários aqui !";
             if(MultiView1.ActiveViewIndex < 0)
