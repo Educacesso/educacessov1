@@ -26,9 +26,9 @@ namespace educacesso
                     FormView1.DataSource = new CursoAddDAO().ExibirCurso(Request.QueryString["COD_CURSO"]);
                     FormView1.DataBind();
                 }
-                catch (Exception erx)
+                catch
                 {
-                    throw erx;
+                    Response.Redirect("Buscar.aspx");
                     
                 }
 

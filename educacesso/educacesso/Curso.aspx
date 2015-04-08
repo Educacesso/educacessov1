@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Curso.aspx.cs" Inherits="educacesso.Curso" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-	<link href="css/Cursoview.css" rel="stylesheet" />
+    <link href="css/CursoView.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 

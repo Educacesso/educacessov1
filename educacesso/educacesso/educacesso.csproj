@@ -429,6 +429,7 @@
     <Content Include="ckeditor\themes\default\theme.js" />
     <Content Include="css\Buscar.css" />
     <Content Include="css\CadastroCursoCss.css" />
+    <Content Include="css\CursoView.css" />
     <Content Include="css\inicioUser.css" />
     <Content Include="css\sobre.css" />
     <Content Include="Curso.aspx" />
