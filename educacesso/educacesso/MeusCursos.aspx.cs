@@ -34,7 +34,7 @@ namespace educacesso
         void Carregar_Cursos()
         {
             SqlCommand cmd = new SqlCommand("SELECT * FROM tblCurso WHERE COD_USUARIO=@COD", new ConnectionFactory().getConnection());
-            cmd.Parameters.AddWithValue("@COD", new CursoAddDAO().BuscarUsuario());
+            cmd.Parameters.AddWithValue("@COD", new CursoAddDAO().buscarUsuario());
 
             gvw_cursos.DataSource = cmd.ExecuteReader(CommandBehavior.CloseConnection);
 

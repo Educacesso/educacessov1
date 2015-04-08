@@ -29,15 +29,15 @@ namespace educacesso
             }
         }
 
-        public void CadastraCurso(String _titulo, String _resumo, String _conteudo)
+        public void CadastraCurso(String titulo, String resumo, String conteudo)
         {
             try
             {
                 SqlCommand cmd = new SqlCommand("INSERT INTO tblCurso(TITULO_CURSO, RESUMO_CURSO, CONTEUDO_CURSO, COD_USUARIO, dataCadastro) VALUES(@TITULO, @RESUMO, @CONTEUDO, @IDUSUARIO, @DATACADASTRO)", new ConnectionFactory().getConnection());
-                cmd.Parameters.AddWithValue("@TITULO", _titulo);
-                cmd.Parameters.AddWithValue("@RESUMO", _resumo);
-                cmd.Parameters.AddWithValue("@CONTEUDO", _conteudo);
-                cmd.Parameters.AddWithValue("@IDUSUARIO", BuscarUsuario());
+                cmd.Parameters.AddWithValue("@TITULO", titulo);
+                cmd.Parameters.AddWithValue("@RESUMO", resumo);
+                cmd.Parameters.AddWithValue("@CONTEUDO", conteudo);
+                cmd.Parameters.AddWithValue("@IDUSUARIO", buscarUsuario());
                 cmd.Parameters.AddWithValue("@DATACADASTRO", DateTime.Now);
                 cmd.ExecuteNonQuery();
 
@@ -50,7 +50,7 @@ namespace educacesso
         }
 
 
-        public String BuscarUsuario()
+        public String buscarUsuario()
         {
             SqlCommand cmd = new SqlCommand("SELECT COD_USUARIO FROM USUARIO WHERE USUARIO_ID=@NOME", new ConnectionFactory().getConnection());
             cmd.Parameters.AddWithValue("@NOME", CurrentUserName);

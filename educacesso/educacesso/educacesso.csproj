@@ -431,6 +431,7 @@
     <Content Include="css\CadastroCursoCss.css" />
     <Content Include="css\Cursoview.css" />
     <Content Include="css\inicioUser.css" />
+    <Content Include="css\sobre.css" />
     <Content Include="Curso.aspx" />
     <Content Include="homeCurso.aspx" />
     <Content Include="Imagens\icones\Book-2.png" />
@@ -457,6 +458,7 @@
     <Content Include="SampleSite\bin\AjaxControlToolkit.dll" />
     <Content Include="SampleSite\bin\AjaxControlToolkit.HtmlEditor.Sanitizer.dll" />
     <Content Include="SampleSite\bin\AjaxControlToolkit.StaticResources.dll" />
+    <Content Include="Sobre.aspx" />
     <Content Include="TesteAddCurso.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -546,6 +548,12 @@
     <Compile Include="modelo\Pessoa.cs" />
     <Compile Include="modelo\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sobre.aspx.cs">
+      <DependentUpon>Sobre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sobre.aspx.designer.cs">
+      <DependentUpon>Sobre.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TesteAddCurso.aspx.cs">
       <DependentUpon>TesteAddCurso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
