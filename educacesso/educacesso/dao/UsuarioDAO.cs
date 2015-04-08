@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 
 
 public class UsuarioDAO
@@ -49,17 +50,17 @@ public class UsuarioDAO
         try
         {
 
-            if (BuscarUsuario(_nome))
-            { 
-            SqlCommand cmd = new SqlCommand("INSERT INTO Usuario(USUARIO_ID, USUARIO_SENHA) VALUES(@NOME, @SENHA)", new ConnectionFactory().getConnection());
-            cmd.Parameters.AddWithValue("@NOME", _nome);
-            cmd.Parameters.AddWithValue("@SENHA", _senha);
-            cmd.ExecuteNonQuery();
-            return "Cadastro Realizado Com Sucesso!! ";
+            if (BuscarUsuario(_nome) != true)
+            {
+                SqlCommand cmd = new SqlCommand("INSERT INTO Usuario(USUARIO_ID, USUARIO_SENHA) VALUES(@NOME, @SENHA)", new ConnectionFactory().getConnection());
+                cmd.Parameters.AddWithValue("@NOME", _nome);
+                cmd.Parameters.AddWithValue("@SENHA", _senha);
+                cmd.ExecuteNonQuery();
+                return "Cadastro Realizado Com Sucesso!! ";
             }
             else
-                return "Usuario Já Existente! :(" ; 
-            
+                return "Usuario Já Existente! :(";
+
         }
         catch (Exception erx)
         {//"Ocorreu um erro inesperado";//erx.ToString()
@@ -76,20 +77,37 @@ public class UsuarioDAO
             cmd.Parameters.AddWithValue("@NOME", _nome);
 
             SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-            while(dr.Read())
-            { 
-            if(_nome == dr["USUARIO_ID"].ToString())
+            while (dr.Read())
             {
-                return false;
-            }
+                if (_nome == dr["USUARIO_ID"].ToString())
+                {
+                    return true;
+                }
 
             }
-            return true;
+            return false;
         }
         catch (Exception erx)
         {
             throw new Exception(erx.ToString());
         }
+    }
+
+    public Boolean LogarUsuario(string cNome, string cSenha, bool persist)
+    {
+        SqlCommand cmd = new SqlCommand("SELECT USUARIO_ID, USUARIO_SENHA FROM Usuario WHERE USUARIO_ID=@NOME ", new ConnectionFactory().getConnection());
+        cmd.Parameters.AddWithValue("@NOME", cNome);
+        SqlDataReader leitor = cmd.ExecuteReader();
+        while (leitor.Read())
+        {
+            if (cNome == leitor["USUARIO_ID"].ToString() && cSenha == leitor["USUARIO_SENHA"].ToString())
+            {
+              FormsAuthentication.RedirectFromLoginPage(cNome, persist);
+            return true;
+            }
+            
+        }
+        return false;
     }
 
 }

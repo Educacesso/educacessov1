@@ -19,29 +19,13 @@ namespace educacesso
 
         protected void btn_logar_Click(object sender, EventArgs e)
         {
-            string loginBanco = "";
-            string SenhaBanco = "";
-
-            SqlCommand cmd = new SqlCommand("SELECT USUARIO_ID, USUARIO_SENHA FROM Usuario WHERE USUARIO_ID=@NOME ", new ConnectionFactory().getConnection());
-            cmd.Parameters.AddWithValue("@NOME", cNome.Text);
-            SqlDataReader leitor = cmd.ExecuteReader();
-            while (leitor.Read())
-            {
-                loginBanco = leitor["USUARIO_ID"].ToString();
-                SenhaBanco = leitor["USUARIO_SENHA"].ToString();
-            }
-
-            if (this.cNome.Text == loginBanco && this.cSenha.Text == SenhaBanco)
-            {
-
-                FormsAuthentication.RedirectFromLoginPage(loginBanco, Persist.Checked);
-
-            }
+           // msg_logar.Text = "Falha na autenticação";
+            
+        // msg_logar.Text = new UsuarioDAO().LogarUsuario(cNome.Text, cSenha.Text, Persist.Checked);
+            if(new UsuarioDAO().LogarUsuario(cNome.Text, cSenha.Text, Persist.Checked) == true)
+                FormsAuthentication.RedirectFromLoginPage(cNome.Text, Persist.Checked);
             else
-            {
-                msg_logar.Text ="Falha na autenticação";
-                
-            }
+                msg_logar.Text = "ID OU SENHA NÃO ENCONTRADO";
         }
     }
 }
