@@ -14,7 +14,7 @@ namespace educacesso
 
         }
 
-        protected void Unnamed5_Click(object sender, EventArgs e)
+        protected void cadastrar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -24,8 +24,6 @@ namespace educacesso
             catch (Exception erx)
             {
                 throw new Exception(erx.ToString());
-                
-
             }
         }
     }

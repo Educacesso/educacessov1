@@ -11,10 +11,10 @@
         <div>
             <h1>Encontre cursos de outros usuários -></h1>
             <div id="inside-buscar">
-                <asp:TextBox ID="text1" runat="server" OnTextChanged="btn_buscar_Click"></asp:TextBox><img src="Imagens/icones/Search-3-64.png" />
+                <asp:TextBox ID="text1" runat="server"></asp:TextBox><img src="Imagens/icones/Search-3-64.png" />
            
                  </div>
-            <asp:Button ID="btn" runat="server" Text="Pesquisar" OnClick="Button1_Click" CssClass="button" />
+            <asp:Button ID="btn" runat="server" Text="Pesquisar" OnClick="pesquisar_Click" CssClass="button" />
             <cc1:AutoCompleteExtender ID="AutoCompleteExtender1" runat="server"
                 TargetControlID="text1"
                 EnableCaching="true"

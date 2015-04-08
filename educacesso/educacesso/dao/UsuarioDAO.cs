@@ -49,7 +49,7 @@ public class UsuarioDAO
         try
         {
 
-            if (BuscarUsuario(_nome) != "ID já Cadastrado")
+            if (BuscarUsuario(_nome))
             { 
             SqlCommand cmd = new SqlCommand("INSERT INTO Usuario(USUARIO_ID, USUARIO_SENHA) VALUES(@NOME, @SENHA)", new ConnectionFactory().getConnection());
             cmd.Parameters.AddWithValue("@NOME", _nome);
@@ -58,9 +58,8 @@ public class UsuarioDAO
             return "Cadastro Realizado Com Sucesso!! ";
             }
             else
-            {
-                return "Usuario Já Existente! :("; 
-            }
+                return "Usuario Já Existente! :(" ; 
+            
         }
         catch (Exception erx)
         {//"Ocorreu um erro inesperado";//erx.ToString()
@@ -69,7 +68,7 @@ public class UsuarioDAO
 
     }
 
-    public String BuscarUsuario(string _nome)
+    public Boolean BuscarUsuario(string _nome)
     {
         try
         {
@@ -81,15 +80,15 @@ public class UsuarioDAO
             { 
             if(_nome == dr["USUARIO_ID"].ToString())
             {
-                return _nome = "ID já Cadastrado";
+                return false;
             }
 
             }
-            return _nome;
+            return true;
         }
-        catch
+        catch (Exception erx)
         {
-            return _nome;
+            throw new Exception(erx.ToString());
         }
     }
 

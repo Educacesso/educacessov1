@@ -15,6 +15,9 @@ namespace educacesso
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            /*if(User.Identity.IsAuthenticated !=true)
+                Response.Redirect("login.aspx");*/
+            
 
         }
 
@@ -23,7 +26,6 @@ namespace educacesso
         public static List<string> GetConteudo(string prefixText)
         {
             DataTable dt = new DataTable();
-            //SqlCommand cmd = new SqlCommand("SELECT USUARIO_ID FROM Usuario WHERE USUARIO_ID like @NAME+'%'", new ConnectionFactory().getConnection());
             SqlCommand cmd = new SqlCommand("SELECT TITULO_CURSO FROM tblCurso WHERE TITULO_CURSO like @NAME+'%'", new ConnectionFactory().getConnection());
             cmd.Parameters.AddWithValue("@NAME", prefixText);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -36,16 +38,10 @@ namespace educacesso
             return lCursos;
         }
 
-        public void btn_buscar_Click(object sender, EventArgs e)
+        public void CarregarListView()
         {
-            
-
-            // cmd.Parameters.AddWithValue("@TITULO_CURSO", new CursoAddDAO().BuscarUsuario());
-            //gvw_cursos.DataSource = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-            //gvw_cursos.DataBind();
-            /*
             ListView.DataSource = new CursoAddDAO().Pesquisar(text1.Text);
-            ListView.DataBind();*/
+            ListView.DataBind();
         }
 
       
@@ -65,13 +61,9 @@ namespace educacesso
 
        }
 
-       protected void Button1_Click(object sender, EventArgs e)
+       protected void pesquisar_Click(object sender, EventArgs e)
        {
-           SqlCommand cmd = new SqlCommand("SELECT * FROM tblCurso WHERE TITULO_CURSO LIKE '%" + text1.Text + "%'", new ConnectionFactory().getConnection());
-
-           ListView.DataSource = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-
-           ListView.DataBind();
+           CarregarListView();
        }
 
     }

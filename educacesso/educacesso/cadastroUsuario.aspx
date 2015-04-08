@@ -34,7 +34,7 @@
             <asp:TextBox runat="server" ID="ccSenha" TextMode="Password" />
             </div>
     </aside>
-        <asp:Button runat="server" CommandName="MoveNext" Text="ENVIAR" CssClass="btn-submit1" OnClick="Unnamed5_Click" />
+        <asp:Button runat="server" CommandName="MoveNext" Text="ENVIAR" CssClass="btn-submit1" OnClick="cadastrar_Click" />
     <section id="rodape2">
 
         <h2> JÁ POSSUI UMA CONTA NO EDUCACESSO?</h2>
