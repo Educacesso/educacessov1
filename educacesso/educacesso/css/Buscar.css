@@ -90,27 +90,25 @@ input:active{
 }
 
 
-
 .lista table{
     position:relative;
-    border: 1px solid #606060;
+    border: 2px solid #e6dfdf;
+    border-radius: 5px;
     border-spacing: 0px;
-    
-    
 }
-
 
 .lista td
 {
-   
     text-align:left;
+    line-height: 40px;
     width:150px;
-    float: left;
-    border: 1px solid #606060;
-    color: #ed6f70;
+    height: 40px;
+    border:2px solid #c8c1c1;
+    border-radius: 2.3px;
+    color: #8497a3;
     padding: 5px;
-    vertical-align: top;
     font-weight: bold;
+   font-family: 'Titillium Web';
 }
 
 .button{

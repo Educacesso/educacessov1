@@ -49,16 +49,13 @@
 
                         </td>
                         
-                        <td>
+                        <td style="width:300px; height:25px">
                            
-                            <asp:Label ID="tituloLabel" runat="server" Text='<%#Eval("TITULO_CURSO") %>' />
+                            <asp:Label ID="tituloLabel" runat="server" Text='<%#Eval("NOME_CURSO") %>' />
 
 
                         </td>
-                        <td>
-                            
-                            <asp:Label ID="resumoLabel" runat="server" Text='<%#Eval("RESUMO_CURSO") %>' />
-                        </td>
+           
                        
                         <td>
                             <asp:LinkButton ID="SelectButton" runat="server" CommandName="Select" Text="Select" />

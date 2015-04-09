@@ -10,7 +10,7 @@
     <asp:Label ID="conteudoCurso" runat="server"></asp:Label>
 
     <div id="container">
-        <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True">
+        <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True" CssClass="dropDownListar">
 
             <asp:ListItem>
                         Selecione uma lição abaixo

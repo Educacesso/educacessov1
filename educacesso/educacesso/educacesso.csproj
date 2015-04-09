@@ -438,6 +438,9 @@
     <Content Include="Imagens\icones\Book-2.png" />
     <Content Include="Imagens\icones\book-256.png" />
     <Content Include="Imagens\icones\circle-school-learn-study-subject-math-pencil-edit-256.png" />
+    <Content Include="Imagens\icones\document_add.png" />
+    <Content Include="Imagens\icones\document_delete.png" />
+    <Content Include="Imagens\icones\document_edit.png" />
     <Content Include="Imagens\icones\plus.png" />
     <Content Include="Imagens\icones\school-learn-study-teacher-teaching-256.png" />
     <Content Include="Imagens\icones\search-256.png" />
