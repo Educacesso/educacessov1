@@ -431,12 +431,14 @@
     <Content Include="css\CadastroCursoCss.css" />
     <Content Include="css\CursoView.css" />
     <Content Include="css\inicioUser.css" />
+    <Content Include="css\Meus Cursos.css" />
     <Content Include="css\sobre.css" />
     <Content Include="Curso.aspx" />
     <Content Include="homeCurso.aspx" />
     <Content Include="Imagens\icones\Book-2.png" />
     <Content Include="Imagens\icones\book-256.png" />
     <Content Include="Imagens\icones\circle-school-learn-study-subject-math-pencil-edit-256.png" />
+    <Content Include="Imagens\icones\plus.png" />
     <Content Include="Imagens\icones\school-learn-study-teacher-teaching-256.png" />
     <Content Include="Imagens\icones\search-256.png" />
     <Content Include="Imagens\icones\Search-3-64.png" />
@@ -455,6 +457,7 @@
     <Content Include="js\curso.js" />
     <Content Include="login.aspx" />
     <Content Include="MeusCursos.aspx" />
+    <Content Include="NovaLicao.aspx" />
     <Content Include="SampleSite\bin\AjaxControlToolkit.dll" />
     <Content Include="SampleSite\bin\AjaxControlToolkit.HtmlEditor.Sanitizer.dll" />
     <Content Include="SampleSite\bin\AjaxControlToolkit.StaticResources.dll" />
@@ -547,6 +550,13 @@
     <Compile Include="modelo\Curso.cs" />
     <Compile Include="modelo\Pessoa.cs" />
     <Compile Include="modelo\Usuario.cs" />
+    <Compile Include="NovaLicao.aspx.cs">
+      <DependentUpon>NovaLicao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NovaLicao.aspx.designer.cs">
+      <DependentUpon>NovaLicao.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sobre.aspx.cs">
       <DependentUpon>Sobre.aspx</DependentUpon>

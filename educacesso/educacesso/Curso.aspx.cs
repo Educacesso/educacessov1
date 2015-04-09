@@ -16,23 +16,42 @@ namespace educacesso
             if (User.Identity.IsAuthenticated != true)
                 Response.Redirect("login.aspx");
 
+
             if (!IsPostBack)
             {
 
                 try
                 {
-                    
-                  //  labelcurso.Text = Request.QueryString["COD_CURSO"];
-                    FormView1.DataSource = new CursoAddDAO().ExibirCurso(Request.QueryString["COD_CURSO"]);
-                    FormView1.DataBind();
+
+                    DropDownList1.DataSource = new CursoAddDAO().CarregarDropDownList(Request.QueryString["COD_CURSO"]);
+                    DropDownList1.DataTextField = "TITULO_LICAO";
+                    DropDownList1.DataValueField = "COD_LICAO";
+                    DropDownList1.DataBind();
+                    DropDownList1.Items.Add(new ListItem("Selecione uma Lição", "0"));
+                    DropDownList1.SelectedValue = "0";
                 }
                 catch
                 {
                     Response.Redirect("Buscar.aspx");
-                    
+
                 }
 
             }
+
+
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            testeLabel.Text = "Tela 2";
+            if (MultiView1.ActiveViewIndex < 0 && MultiView1.ActiveViewIndex <= 1)
+            {
+                MultiView1.ActiveViewIndex += 1;
+            }
+            DropDownList1.DataValueField = DropDownList1.SelectedValue;
+            FormView1.DataSource = new CursoAddDAO().ExibirCurso(DropDownList1.DataValueField);
+            FormView1.DataBind();
+
         }
     }
 }

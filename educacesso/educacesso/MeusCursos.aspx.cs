@@ -18,7 +18,7 @@ namespace educacesso
 
             if (!Page.IsPostBack)
             {
-                Carregar_Cursos();
+                CarregarListView();
 
             }
         }
@@ -34,20 +34,32 @@ namespace educacesso
             }
         }
 
-        void Carregar_Cursos()
+
+        public void CarregarListView()
         {
             SqlCommand cmd = new SqlCommand("SELECT * FROM tblCurso WHERE COD_USUARIO=@COD", new ConnectionFactory().getConnection());
             cmd.Parameters.AddWithValue("@COD", new CursoAddDAO().buscarUsuario());
 
-            gvw_cursos.DataSource = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            ListView.DataSource = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            ListView.DataBind();
+        }
 
-            gvw_cursos.DataBind();
+
+        protected void ListView_SelectedIndexChanging(object sender, ListViewSelectEventArgs e)
+        {
+            ListView.SelectedIndex = e.NewSelectedIndex;
+            int i = ListView.SelectedIndex;
+
+            if (ListView.Items.Count > 0)
+            {
+                Label dtSimplesText = ListView.Items[i].FindControl("id_curso") as Label;
+
+                int a = int.Parse(dtSimplesText.Text);
+                Response.Redirect("NovaLicao.aspx?COD_CURSO=" + a + "");
+
+            }
 
         }
-     
-     
-
-        
             
         
         

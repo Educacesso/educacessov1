@@ -52,6 +52,25 @@ namespace educacesso
 
         }
 
+        public void CadastrarLicao(string titulo, string conteudo, string cod)
+        {
+            try
+            {
+                SqlCommand cmd = new SqlCommand("INSERT INTO tblLicao(TITULO_LICAO, CONTEUDO_LICAO, COD_CURSO) VALUES(@TITULO, @CONTEUDO, @COD)", new ConnectionFactory().getConnection());
+                cmd.Parameters.AddWithValue("@TITULO", titulo);
+                cmd.Parameters.AddWithValue("@CONTEUDO", conteudo);
+                cmd.Parameters.AddWithValue("@COD", cod);
+                cmd.ExecuteNonQuery();
+    
+            }
+            catch (Exception erx)
+            {
+
+                throw new Exception(erx.ToString());
+            }
+           
+        }
+
         public String buscarCurso(string nome)
         {
             SqlCommand cmd = new SqlCommand("SELECT COD_CURSO FROM TBLCURSO WHERE NOME_CURSO=@NOME", new ConnectionFactory().getConnection());
@@ -90,7 +109,12 @@ namespace educacesso
 
         public DataSet ExibirCurso(string cod)
         {
-            return new ConnectionFactory().AbrirTabela("SELECT * FROM tblCurso INNER JOIN tblLicao ON tblCurso.COD_CURSO = tblLicao.COD_CURSO WHERE tblCurso.COD_CURSO=" + cod);
+            return new ConnectionFactory().AbrirTabela("SELECT * FROM tblCurso INNER JOIN tblLicao ON tblCurso.COD_CURSO = tblLicao.COD_CURSO WHERE tblLicao.COD_LICAO=" + cod);
+        }
+
+        public DataSet CarregarDropDownList(string codCurso)
+        {
+            return new ConnectionFactory().AbrirTabela("SELECT * FROM tblLicao WHERE COD_CURSO ="+codCurso);
         }
     }
 }

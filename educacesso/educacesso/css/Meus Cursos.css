@@ -1,0 +1,80 @@
+﻿body {
+}
+
+.plus{
+    position: relative;
+     width: 35px;
+     top:0px;
+     left: 50px;
+         
+}
+
+.completionList {
+    border: solid 1px #f23b3b;
+    box-shadow: 1px 2px 7px #ff8181;
+    margin: 0px;
+    padding: 3px;
+    height: 80px;
+    overflow: auto;
+    background-color: #FFFFFF;
+    font-size: 14pt;
+    font-weight:bolder;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.listItem {
+    color: #ff8181;
+    
+}
+
+
+.itemHighlighted {
+ 
+   box-shadow: 1px 2px 7px rgba(26,07,245,0.6);
+   background-color:#ffffff;
+   color: #ae3030;
+   
+}
+
+input{
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    left:15px;
+    top: 15px;
+    font-size: 12pt;
+    font-weight: bolder;
+    color: #ff8181;
+    background-color: #f5f6f7;
+    -webkit-border-radius: 0.2em;
+    border-color: #ed6f70;
+    font-family: 'Titillium Web', sans-serif;
+}
+input:active{
+    border-color: none;
+}
+
+
+
+.lista table{
+    position:relative;
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    
+    
+}
+
+
+.lista td
+{
+   
+    text-align:left;
+    width:150px;
+    height: 30px;
+    float: left;
+    border: 1px solid #606060;
+    color: #ed6f70;
+    padding: 5px;
+    vertical-align: top;
+    font-weight: bold;
+}
