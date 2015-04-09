@@ -15,7 +15,7 @@ namespace educacesso
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(User.Identity.IsAuthenticated !=true)
+            if (User.Identity.IsAuthenticated != true)
                 Response.Redirect("login.aspx");
         }
 
@@ -24,7 +24,7 @@ namespace educacesso
         public static List<string> GetConteudo(string prefixText)
         {
             DataTable dt = new DataTable();
-            SqlCommand cmd = new SqlCommand("SELECT TITULO_CURSO FROM tblCurso WHERE TITULO_CURSO like @NAME+'%'", new ConnectionFactory().getConnection());
+            SqlCommand cmd = new SqlCommand("SELECT NOME_CURSO FROM tblCurso WHERE NOME_CURSO like @NAME+'%'", new ConnectionFactory().getConnection());
             cmd.Parameters.AddWithValue("@NAME", prefixText);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);

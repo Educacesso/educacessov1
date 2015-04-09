@@ -29,24 +29,42 @@ namespace educacesso
             }
         }
 
-        public void CadastraCurso(String titulo, String resumo, String conteudo)
+        public void CadastraCurso(String nome, String titulo, String resumo, String conteudo)
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("INSERT INTO tblCurso(TITULO_CURSO, RESUMO_CURSO, CONTEUDO_CURSO, COD_USUARIO, dataCadastro) VALUES(@TITULO, @RESUMO, @CONTEUDO, @IDUSUARIO, @DATACADASTRO)", new ConnectionFactory().getConnection());
-                cmd.Parameters.AddWithValue("@TITULO", titulo);
+                SqlCommand cmd = new SqlCommand("INSERT INTO tblCurso(NOME_CURSO, RESUMO_CURSO, COD_USUARIO, dataCadastro) VALUES(@NOME, @RESUMO, @IDUSUARIO, @DATACADASTRO)", new ConnectionFactory().getConnection());
+                cmd.Parameters.AddWithValue("@NOME", nome);
                 cmd.Parameters.AddWithValue("@RESUMO", resumo);
-                cmd.Parameters.AddWithValue("@CONTEUDO", conteudo);
                 cmd.Parameters.AddWithValue("@IDUSUARIO", buscarUsuario());
                 cmd.Parameters.AddWithValue("@DATACADASTRO", DateTime.Now);
                 cmd.ExecuteNonQuery();
-
+                cmd = new SqlCommand("INSERT INTO tblLicao(TITULO_LICAO, CONTEUDO_LICAO, COD_CURSO) VALUES(@TITULO, @CONTEUDO, @COD)", new ConnectionFactory().getConnection());
+                cmd.Parameters.AddWithValue("@TITULO", titulo);
+                cmd.Parameters.AddWithValue("@CONTEUDO", conteudo);
+                cmd.Parameters.AddWithValue("@COD", buscarCurso(nome));
+                cmd.ExecuteNonQuery();
             }
             catch (Exception erx)
             {//"Ocorreu um erro inesperado";//erx.ToString()
                 throw new Exception(erx.ToString());
             }
 
+        }
+
+        public String buscarCurso(string nome)
+        {
+            SqlCommand cmd = new SqlCommand("SELECT COD_CURSO FROM TBLCURSO WHERE NOME_CURSO=@NOME", new ConnectionFactory().getConnection());
+            cmd.Parameters.AddWithValue("@NOME", nome);
+
+            SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            while (dr.Read())
+            {
+                Codigo = dr["COD_CURSO"].ToString();
+
+            }
+            return Codigo;
+          
         }
 
 
@@ -67,12 +85,12 @@ namespace educacesso
 
         public DataSet Pesquisar(string _txtpesq)
         {
-            return new ConnectionFactory().AbrirTabela("SELECT * FROM tblCurso WHERE TITULO_CURSO LIKE '%" + _txtpesq + "%'");
+            return new ConnectionFactory().AbrirTabela("SELECT * FROM tblCurso WHERE NOME_CURSO LIKE '%" + _txtpesq + "%'");
         }
 
         public DataSet ExibirCurso(string cod)
         {
-            return new ConnectionFactory().AbrirTabela("SELECT * FROM tblCurso WHERE COD_CURSO=" + cod);
+            return new ConnectionFactory().AbrirTabela("SELECT * FROM tblCurso INNER JOIN tblLicao ON tblCurso.COD_CURSO = tblLicao.COD_CURSO WHERE tblCurso.COD_CURSO=" + cod);
         }
     }
 }

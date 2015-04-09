@@ -40,13 +40,13 @@ namespace educacesso {
         protected global::System.Web.UI.WebControls.View view1;
         
         /// <summary>
-        /// txt_Titulo control.
+        /// txt_nome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Titulo;
+        protected global::System.Web.UI.WebControls.TextBox txt_nome;
         
         /// <summary>
         /// txt_Resumo control.
@@ -58,6 +58,15 @@ namespace educacesso {
         protected global::System.Web.UI.WebControls.TextBox txt_Resumo;
         
         /// <summary>
+        /// view control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View view;
+        
+        /// <summary>
         /// view2 control.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,24 @@ namespace educacesso {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.View view2;
+        
+        /// <summary>
+        /// txt_Titulo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_Titulo;
+        
+        /// <summary>
+        /// view3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.View view3;
         
         /// <summary>
         /// CKEditorControl1 control.
@@ -76,13 +103,13 @@ namespace educacesso {
         protected global::CKEditor.NET.CKEditorControl CKEditorControl1;
         
         /// <summary>
-        /// view3 control.
+        /// view4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.View view3;
+        protected global::System.Web.UI.WebControls.View view4;
         
         /// <summary>
         /// btn_cadastrar control.

@@ -13,15 +13,18 @@
 	<asp:FormView ID="FormView1" runat="server">
 		<ItemTemplate>
 			
+            <div>
+					<h1>Nome:</h1><asp:Label ID="Label1" runat="server" CssClass="texto" Text='<%# Bind("NOME_CURSO") %>'></asp:Label>
+				</div>
 				<div id="titulo">
-					<h1>Titulo:</h1><asp:Label ID="tituloCurso" runat="server" CssClass="texto" Text='<%# Bind("TITULO_CURSO") %>'></asp:Label>
+					<h1>Titulo:</h1><asp:Label ID="tituloCurso" runat="server" CssClass="texto" Text='<%# Bind("TITULO_LICAO") %>'></asp:Label>
 				</div>
 				<div id="resumo">
 					<h1>Resumo:</h1><asp:Label ID="resumoCurso" runat="server" CssClass="texto" Text='<%# Bind("RESUMO_CURSO") %>'></asp:Label>
 				</div>
 			<div id="borda">
 				<div id="conteudo">
-					<h1>Conteudo:</h1><asp:Label ID="conteudoCurso" runat="server" CssClass="texto" Text='<%# Bind("CONTEUDO_CURSO") %>'></asp:Label>
+					<h1>Conteudo:</h1><asp:Label ID="conteudoCurso" runat="server" CssClass="texto" Text='<%# Bind("CONTEUDO_LICAO") %>'></asp:Label>
 				</div>
 			</div>
 		</ItemTemplate>
