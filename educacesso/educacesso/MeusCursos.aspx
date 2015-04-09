@@ -9,7 +9,7 @@
     
     <label>NOME DO CURSO</label>
     <label>DATA CADASTRO</label>
-    <asp:ListView ID="ListView" runat="server" OnSelectedIndexChanging="ListView_SelectedIndexChanging" ItemPlaceholderID="itemContainer">
+    <asp:ListView ID="ListView" runat="server" OnSelectedIndexChanging="ListView_SelectedIndexChanging" ItemPlaceholderID="itemContainer" OnItemDeleted="ListView_ItemDeleted">
         <EmptyDataTemplate>
             <tr>
                 <td>Nenhum curso encontrado!

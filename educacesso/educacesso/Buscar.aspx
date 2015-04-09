@@ -12,8 +12,8 @@
             <h1>Encontre cursos de outros usuários -></h1>
             <div id="inside-buscar">
                 <asp:TextBox ID="text1" runat="server" AutoPostBack="True" OnTextChanged="pesquisar_Click"></asp:TextBox><img src="Imagens/icones/Search-3-64.png" />
-           
-                 </div>
+
+            </div>
             <asp:Button ID="btn" runat="server" Text="Pesquisar" OnClick="pesquisar_Click" CssClass="button" />
             <cc1:AutoCompleteExtender ID="AutoCompleteExtender1" runat="server"
                 TargetControlID="text1"
@@ -33,30 +33,26 @@
                     </td>
                 </tr>
             </EmptyDataTemplate>
-           
+
             <LayoutTemplate>
-              <ul class="lista">
-                  <asp:PlaceHolder ID="itemContainer" runat="server" />
-              </ul>
-          </LayoutTemplate>
+                <ul class="lista">
+                    <asp:PlaceHolder ID="itemContainer" runat="server" />
+                </ul>
+            </LayoutTemplate>
 
             <ItemTemplate>
                 <table>
                     <tr runat="server">
-                        <td id="cod">
-                            <label>Cod: </label>
-                            <asp:Label ID="id_curso" runat="server" Text='<%#Eval("COD_CURSO") %>' />
 
-                        </td>
-                        
-                        <td style="width:300px; height:25px">
-                           
+
+                        <td style="width: 300px; height: 25px">
+                            <asp:Label ID="id_curso" runat="server" Visible="false" Text='<%#Eval("COD_CURSO") %>' />
                             <asp:Label ID="tituloLabel" runat="server" Text='<%#Eval("NOME_CURSO") %>' />
 
-
                         </td>
-           
-                       
+
+                      
+
                         <td>
                             <asp:LinkButton ID="SelectButton" runat="server" CommandName="Select" Text="Select" />
                         </td>
@@ -77,12 +73,12 @@
                     <td>
                         <asp:Label ID="resumoCurso" runat="server" Text='<%#Eval("RESUMO_CURSO") %>' />
                     </td>
-                    
+
 
                 </tr>
             </SelectedItemTemplate>
         </asp:ListView>
-        
+
         <a href="inicio.aspx">Voltar Inicio</a>
     </div>
 </asp:Content>

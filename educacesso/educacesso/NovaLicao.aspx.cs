@@ -17,7 +17,7 @@ namespace educacesso
 
            codigoCurso = Request.QueryString["COD_CURSO"];
 
-            titulo.Text = "Adicione uma lição no seu curso para compartilhar com outros usuários!";
+            titulo.Text = "Adicione mais uma lição no seu curso para compartilhar com outros usuários!";
             if (MultiView1.ActiveViewIndex < 0)
             {
                 MultiView1.ActiveViewIndex += 1;

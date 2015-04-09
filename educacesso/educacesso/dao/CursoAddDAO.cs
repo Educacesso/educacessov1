@@ -71,6 +71,9 @@ namespace educacesso
            
         }
 
+
+        
+
         public String buscarCurso(string nome)
         {
             SqlCommand cmd = new SqlCommand("SELECT COD_CURSO FROM TBLCURSO WHERE NOME_CURSO=@NOME", new ConnectionFactory().getConnection());
@@ -116,5 +119,7 @@ namespace educacesso
         {
             return new ConnectionFactory().AbrirTabela("SELECT * FROM tblLicao WHERE COD_CURSO ="+codCurso);
         }
+
+
     }
 }

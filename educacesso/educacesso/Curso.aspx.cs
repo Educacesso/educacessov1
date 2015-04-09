@@ -43,7 +43,7 @@ namespace educacesso
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            testeLabel.Text = "Tela 2";
+            
             if (MultiView1.ActiveViewIndex < 0 && MultiView1.ActiveViewIndex <= 1)
             {
                 MultiView1.ActiveViewIndex += 1;

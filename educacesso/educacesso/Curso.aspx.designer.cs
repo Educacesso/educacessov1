@@ -40,15 +40,6 @@ namespace educacesso {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
-        /// testeLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label testeLabel;
-        
-        /// <summary>
         /// MultiView1 control.
         /// </summary>
         /// <remarks>

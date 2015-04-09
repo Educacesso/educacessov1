@@ -60,8 +60,23 @@ namespace educacesso
             }
 
         }
-            
-        
+
+
+        protected void ListView_ItemDeleted(object sender, ListViewDeletedEventArgs e)
+        {
+            ListView.SelectedIndex = e.AffectedRows;
+            int i = ListView.SelectedIndex;
+            if (ListView.Items.Count > 0)
+            {
+                Label dtSimplesText = ListView.Items[i].FindControl("id_curso") as Label;
+
+                int a = int.Parse(dtSimplesText.Text);
+
+                SqlCommand cmd = new SqlCommand("DELETE FROM tblCurso AS cr INNER JOIN tblLicao AS ls ON cr.COD_CURSO = ls.COD_CURSO WHERE ls.COD_CURSO = @COD", new ConnectionFactory().getConnection());
+                cmd.Parameters.AddWithValue("@COD", a);
+                cmd.ExecuteNonQuery();
+            }
+        }
         
         
     }
