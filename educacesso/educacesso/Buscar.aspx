@@ -81,7 +81,5 @@
                 </tr>
             </SelectedItemTemplate>
         </asp:ListView>
-
-        <a href="inicio.aspx">Voltar Inicio</a>
     </div>
 </asp:Content>

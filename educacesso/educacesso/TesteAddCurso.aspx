@@ -5,9 +5,9 @@
     <link href="css/CadastroCursoCss.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <div>
     <asp:Label ID="titulo" runat="server" CssClass="titulo"> </asp:Label>
-
+    </div>
     <asp:MultiView ID="MultiView1" runat="server">
         <asp:View ID="view1" runat="server">
             <div class="container">
@@ -23,7 +23,7 @@
         <asp:View ID="view" runat="server">
             <div class="container">
                 <h3>Você gostaria de inserir uma lição no seu curso?</h3>
-                <asp:Button ID="btn_pular" runat="server" Text="Pular" OnClick="btn_pular_Click" />
+                <asp:Button ID="btn_pular" runat="server" Text="Pular" OnClick="btn_pular_Click" CssClass="button pularbtn"/>
             </div>
         </asp:View>
 

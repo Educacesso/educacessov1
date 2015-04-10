@@ -55,6 +55,7 @@ namespace educacesso
         {
 
             MultiView1.ActiveViewIndex += 4;
+            btn_avancar.Visible = false;
             
            
         }
