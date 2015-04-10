@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data;
 using System.Data.SqlClient;
+using educacesso.dao;
 
 
 namespace educacesso
@@ -16,18 +17,6 @@ namespace educacesso
         public string Conteudo { get; set; }
         public int Contador { get; set; }
         public int Gostei { get; set; }
-
-
-        public static string CurrentUserName
-        {
-            get
-            {
-                string userName = "";
-                if (HttpContext.Current.User.Identity.IsAuthenticated)
-                    userName = HttpContext.Current.User.Identity.Name;
-                return userName;
-            }
-        }
 
         public void CadastraCurso(String nome, String titulo, String resumo, String conteudo)
         {
@@ -112,7 +101,7 @@ namespace educacesso
         public String buscarUsuario()
         {
             SqlCommand cmd = new SqlCommand("SELECT COD_USUARIO FROM USUARIO WHERE USUARIO_ID=@NOME", new ConnectionFactory().getConnection());
-            cmd.Parameters.AddWithValue("@NOME", CurrentUserName);
+            cmd.Parameters.AddWithValue("@NOME", ContextoUsuario.CurrentUserName);
 
             SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
             while (dr.Read())

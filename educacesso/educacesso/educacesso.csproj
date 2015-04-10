@@ -497,6 +497,7 @@
     <Compile Include="Curso.aspx.designer.cs">
       <DependentUpon>Curso.aspx</DependentUpon>
     </Compile>
+    <Compile Include="dao\ContextoUsuario.cs" />
     <Compile Include="dao\CursoAddDAO.cs" />
     <Compile Include="homeCurso.aspx.cs">
       <DependentUpon>homeCurso.aspx</DependentUpon>
