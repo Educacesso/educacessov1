@@ -4,6 +4,27 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+
+	<!-- Ícone da página -->
+		<link rel="apple-touch-icon" sizes="57x57" href="Imagens/iconNavEduc/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="Imagens/iconNavEduc/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="Imagens/iconNavEduc/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="Imagens/iconNavEduc/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="Imagens/iconNavEduc/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="Imagens/iconNavEduc/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="Imagens/iconNavEduc/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="Imagens/iconNavEduc/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="Imagens/iconNavEduc/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192"  href="Imagens/iconNavEduc/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="Imagens/iconNavEduc/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="Imagens/iconNavEduc/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="Imagens/iconNavEduc/favicon-16x16.png" />
+		<link rel="manifest" href="Imagens/iconNavEduc/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+	<!---->
+
     <title></title>
 
     <link href="../css/StyleSheet.css" rel="stylesheet" />
@@ -17,7 +38,7 @@
                 <div id="logo">
                     <img src="../Imagens/logoEducacesso.png" />
                 </div>
-                <h2>Crie seus proprios cursos Online</h2>
+                <h2>Crie seus próprios cursos Online</h2>
                 <nav id="menu">
                     <h1>Menu Principal</h1>
                     <ul>
@@ -25,7 +46,7 @@
                             <AnonymousTemplate>
                                 <li class="active"><a href="index.aspx">Home</a></li>
                                 <li><a href="listaCursos.aspx">Cursos</a></li>
-                                <li><a href="#">Sobre</a></li>
+                                <li><a href="Sobre.aspx">Sobre</a></li>
                             </AnonymousTemplate>
                             <LoggedInTemplate>
                                 <li class="active"><a href="inicio.aspx">Inicio</a></li>
