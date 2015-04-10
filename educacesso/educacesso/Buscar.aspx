@@ -42,19 +42,22 @@
 
             <ItemTemplate>
                 <table>
+                    <div>
+                        <asp:Label ID="nomeLabel" runat="server" CssClass="nome_curso" Text='<%#Eval("NOME_CURSO") %>' />
+                    </div>
                     <tr runat="server">
 
 
-                        <td style="width: 300px; height: 25px">
+                        <td style="width: 500px;">
                             <asp:Label ID="id_curso" runat="server" Visible="false" Text='<%#Eval("COD_CURSO") %>' />
-                            <asp:Label ID="tituloLabel" runat="server" Text='<%#Eval("NOME_CURSO") %>' />
+                            <asp:Label ID="resumoCurso" runat="server" Text='<%#Eval("RESUMO_CURSO") %>' />
 
                         </td>
 
-                      
+
 
                         <td>
-                            <asp:LinkButton ID="SelectButton" runat="server" CommandName="Select" Text="Select" />
+                            <asp:LinkButton ID="SelectButton" runat="server" CommandName="Select" Text="Leia Mais" CssClass="button btn_leiaMais" />
                         </td>
                     </tr>
                 </table>

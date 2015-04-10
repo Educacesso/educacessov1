@@ -72,7 +72,15 @@ namespace educacesso
         }
 
 
-        
+        public void DeletarCurso(int index)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE tblLicao FROM tblLicao INNER JOIN tblCurso ON tblLicao.COD_CURSO = tblCurso.COD_CURSO WHERE tblCurso.COD_CURSO = @COD", new ConnectionFactory().getConnection());
+            cmd.Parameters.AddWithValue("@COD", index);
+            cmd.ExecuteNonQuery();
+            cmd = new SqlCommand("DELETE tblCurso WHERE COD_CURSO = @COD", new ConnectionFactory().getConnection());
+            cmd.Parameters.AddWithValue("@COD", index);
+            cmd.ExecuteNonQuery();
+        }
 
         public String buscarCurso(string nome)
         {

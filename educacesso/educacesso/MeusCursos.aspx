@@ -9,7 +9,7 @@
     
     <label>NOME DO CURSO</label>
     <label>DATA CADASTRO</label>
-    <asp:ListView ID="ListView" runat="server" OnSelectedIndexChanging="ListView_SelectedIndexChanging" ItemPlaceholderID="itemContainer" OnItemDeleted="ListView_ItemDeleted">
+    <asp:ListView ID="ListView" runat="server"  OnSelectedIndexChanging="ListView_SelectedIndexChanging" ItemPlaceholderID="itemContainer" OnItemDeleting="ListView_ItemDeleting">
         <EmptyDataTemplate>
             <tr>
                 <td>Nenhum curso encontrado!
@@ -41,7 +41,7 @@
                     <td style="width:180px">
                         <asp:ImageButton ID="UpdateButton" runat="server" CommandName="Update" Text="Atualizar" CssClass="plus" ImageUrl="Imagens/icones/document_edit.png" />
                         <asp:ImageButton ID="SelectButton" runat="server" CommandName="Select" Text="Select" CssClass="plus" ImageUrl="Imagens/icones/document_add.png" />
-                        <asp:ImageButton ID="DeletButton" runat="server" CommandName="Delete" Text="Deletar" CssClass="plus" ImageUrl="Imagens/icones/document_delete.png" />
+                        <asp:ImageButton ID="DeletButton" runat="server" CommandName="Delete" Text="Deletar" CssClass="plus" ImageUrl="Imagens/icones/document_delete.png"/>
 
                     </td>
 

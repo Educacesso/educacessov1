@@ -9,7 +9,7 @@ body{
     
 }
 div#container{
-    height: 400px;
+    height: auto;
    
     
 }
@@ -44,6 +44,15 @@ div#inside-buscar img{
     position: relative;
     left: 230px;
 }
+
+div .nome_curso{
+   
+    margin-top: 20px;
+    font-size: 12.8pt;
+    font: normal normal 18px/135% arial;
+    color: #3B6464
+}
+
 .completionList {
     border: solid 1px #f23b3b;
     box-shadow: 1px 2px 7px #ff8181;
@@ -99,13 +108,15 @@ input:active{
 
 .lista td
 {
-    text-align:left;
+    position:relative;
+    text-align: justify;
+    vertical-align:text-top;
     line-height: 40px;
     width:150px;
-    height: 40px;
+    height: auto;
     border:2px solid #c8c1c1;
     border-radius: 2.3px;
-    color: #8497a3;
+    color: #7C7B7B;
     padding: 5px;
     font-weight: bold;
    font-family: 'Titillium Web';
@@ -129,3 +140,17 @@ input:active{
     line-height: 14px;
     margin-bottom: 80px;
 }
+
+.btn_leiaMais{
+    position:relative;
+    padding: 5px 10px;
+    height: auto;
+    vertical-align: text-bottom;
+    top: 0px;
+    left:30px;
+    background-color: #8f8985; 
+    box-shadow: 1px 2px 0px #dee1e8;
+    text-decoration: none;
+    text-shadow: #7C7B7B; 
+
+} /*height: 155px*/
