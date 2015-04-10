@@ -39,11 +39,8 @@ namespace educacesso
                 cmd.Parameters.AddWithValue("@IDUSUARIO", buscarUsuario());
                 cmd.Parameters.AddWithValue("@DATACADASTRO", DateTime.Now);
                 cmd.ExecuteNonQuery();
-                cmd = new SqlCommand("INSERT INTO tblLicao(TITULO_LICAO, CONTEUDO_LICAO, COD_CURSO) VALUES(@TITULO, @CONTEUDO, @COD)", new ConnectionFactory().getConnection());
-                cmd.Parameters.AddWithValue("@TITULO", titulo);
-                cmd.Parameters.AddWithValue("@CONTEUDO", conteudo);
-                cmd.Parameters.AddWithValue("@COD", buscarCurso(nome));
-                cmd.ExecuteNonQuery();
+                if (titulo !="" || conteudo !="")
+                    CadastrarLicao(titulo, conteudo, buscarCurso(nome)); // CADASTRAR 1° LICAO
             }
             catch (Exception erx)
             {//"Ocorreu um erro inesperado";//erx.ToString()
@@ -61,16 +58,30 @@ namespace educacesso
                 cmd.Parameters.AddWithValue("@CONTEUDO", conteudo);
                 cmd.Parameters.AddWithValue("@COD", cod);
                 cmd.ExecuteNonQuery();
-    
+
             }
             catch (Exception erx)
             {
 
                 throw new Exception(erx.ToString());
             }
-           
+
         }
 
+
+        public void CadastrarExercicio(string pergunta, string resposta_a, string resposta_b, string resposta_c, string resposta_d, byte correta)
+        {
+            SqlCommand cmd = new SqlCommand("INSERT INTO tblExercicio(PERGUNTA_EXERCICIO, RESPOSTA_A, RESPOSTA_B, RESPOSTA_C, RESPOSTA_D, CORRETA) " +
+                "VALUES(@PERGUNTA, @EXERCICIO, @RESPOSTA_A, @RESPOSTA_B, @RESPOSTA_C, RESPOSTA_D, CORRETA)", new ConnectionFactory().getConnection());
+
+            cmd.Parameters.AddWithValue("@PERGUNTA", pergunta);
+            cmd.Parameters.AddWithValue("@RESPOSTA_A", resposta_a);
+            cmd.Parameters.AddWithValue("@RESPOSTA_B", resposta_b);
+            cmd.Parameters.AddWithValue("@RESPOSTA_C", resposta_c);
+            cmd.Parameters.AddWithValue("@RESPOSTA_D", resposta_d);
+            cmd.Parameters.AddWithValue("@CORRETA", correta);
+
+        }
 
         public void DeletarCurso(int index)
         {
@@ -94,7 +105,7 @@ namespace educacesso
 
             }
             return Codigo;
-          
+
         }
 
 
@@ -103,11 +114,11 @@ namespace educacesso
             SqlCommand cmd = new SqlCommand("SELECT COD_USUARIO FROM USUARIO WHERE USUARIO_ID=@NOME", new ConnectionFactory().getConnection());
             cmd.Parameters.AddWithValue("@NOME", CurrentUserName);
 
-            SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);        
+            SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
             while (dr.Read())
             {
                 Codigo = dr["COD_USUARIO"].ToString();
-               
+
             }
             return Codigo;
 
@@ -125,7 +136,7 @@ namespace educacesso
 
         public DataSet CarregarDropDownList(string codCurso)
         {
-            return new ConnectionFactory().AbrirTabela("SELECT * FROM tblLicao WHERE COD_CURSO ="+codCurso);
+            return new ConnectionFactory().AbrirTabela("SELECT * FROM tblLicao WHERE COD_CURSO =" + codCurso);
         }
 
 

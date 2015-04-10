@@ -36,6 +36,7 @@ div.container{
     border-top: 1px solid #6965a0;
     width: 1100px;
     text-align: center;
+    height:auto;
 }
 div.container h3{
     font-size: 15pt;
@@ -54,6 +55,7 @@ div.container h3#fim{
     font-size: 19pt;
     color: #817c7c;
     font-family:'Questrial', sans-serif;
+    
 }
 
 Input[type="text"]{
@@ -95,4 +97,35 @@ Input[type="text"]{
     font-size: 12pt;
     line-height: 14px;
     margin-bottom: 80px;
+}
+
+.pergunta{
+    position: relative;
+    margin-left: 70px;
+    width: 620px;
+    height:40px;
+}
+
+div .radioButton{
+    position:relative;
+    width: 370px;
+    display: block;
+    margin: 10px 0px 5px 80px;
+    height: 60px;
+    
+}
+
+.radio{
+    position: relative;
+    margin-right: 20px;
+    
+    
+
+}
+
+.respostas{
+    position:relative;
+    width: 320px;
+    height:40px;
+    
 }

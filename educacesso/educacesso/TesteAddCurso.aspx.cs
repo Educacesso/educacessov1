@@ -10,6 +10,7 @@ namespace educacesso
 {
     public partial class TesteAddCurso : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if (User.Identity.IsAuthenticated != true)
@@ -20,6 +21,8 @@ namespace educacesso
             { 
             MultiView1.ActiveViewIndex += 1;
             }
+
+            
         }
 
         protected void btn_cadastrar_Click(object sender, EventArgs e)
@@ -43,9 +46,23 @@ namespace educacesso
             
             int aux = MultiView1.ActiveViewIndex +=1;
            
-            if(aux >3)
+            if(aux >4)
             btn_avancar.Visible = false;
             
+        }
+
+        protected void btn_pular_Click(object sender, EventArgs e)
+        {
+
+            MultiView1.ActiveViewIndex += 4;
+            
+           
+        }
+
+        protected Boolean estadoPular(Boolean pular)
+        {
+           
+            return pular;
         }
     }
 }
