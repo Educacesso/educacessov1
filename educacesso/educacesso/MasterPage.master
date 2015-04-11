@@ -5,9 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-	<!-- Ícone da página -->
-        <link rel="shortcut icon" href="Imagens/icones/favicon.ico"/>
-	<!---->
+    <!-- Ícone da página -->
+    <link rel="shortcut icon" href="Imagens/icones/favicon.ico" />
+    <!---->
 
     <title></title>
 
@@ -37,7 +37,7 @@
                                 <li><a href="TesteAddCurso.aspx">Crie Cursos</a></li>
                                 <li><a href="MeusCursos.aspx">Meus Cursos</a></li>
                                 <li><a href="Buscar.aspx">Pesquise Cursos</a></li>
-                                
+
                             </LoggedInTemplate>
                         </asp:LoginView>
 
@@ -78,7 +78,12 @@
 
             <footer id="rodape">
                 <p>Educacesso - Desenvolvido na BandTec - 2015</p>
-                <p> <a href="#"><img src="Imagens/icones/facebook.png" alt="Facebook Educacesso" width="50" height="50" /></a> &nbsp; &nbsp; <a href="https://github.com/Educacesso/"><img src="Imagens/icones/github.png" alt="GitHub Educacesso" width="50" height="50" /></a> &nbsp; &nbsp; <a href="#"><img src="Imagens/icones/twitter.png" alt="Twitter Educacesso" width="50" height="50" /></a> </p>
+                <p>
+                    <a href="#">
+                        <img src="Imagens/icones/facebook.png" alt="Facebook Educacesso" width="50" height="50" /></a> &nbsp; &nbsp; <a href="https://github.com/Educacesso/">
+                            <img src="Imagens/icones/github.png" alt="GitHub Educacesso" width="50" height="50" /></a> &nbsp; &nbsp; <a href="#">
+                                <img src="Imagens/icones/twitter.png" alt="Twitter Educacesso" width="50" height="50" /></a>
+                </p>
             </footer>
         </div>
     </form>

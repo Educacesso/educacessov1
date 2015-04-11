@@ -219,5 +219,7 @@ footer#rodape p{
 }
 
 footer#rodape a{
+    cursor:pointer;
     text-align: center;
 }
+
