@@ -7,8 +7,7 @@ using System.Data.SqlClient;
 
     public class ConnectionFactory
     {
-        //public string conexao = @"Data Source=a0ckgtrdxz.database.windows.net;Initial Catalog=educacesso;Persist Security Info=True;User ID=educacesso;Password=Educa102010";
-        public string conexao = @"Data Source=PRISCILA\SQLEXPRESS;Initial Catalog=educacesso;Integrated Security=True";
+        public string conexao = @"Data Source=a0ckgtrdxz.database.windows.net;Initial Catalog=educacesso;Persist Security Info=True;User ID=educacesso;Password=Educa102010";
         
         public SqlConnection getConnection()
         {

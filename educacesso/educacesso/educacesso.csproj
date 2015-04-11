@@ -441,10 +441,13 @@
     <Content Include="Imagens\icones\document_add.png" />
     <Content Include="Imagens\icones\document_delete.png" />
     <Content Include="Imagens\icones\document_edit.png" />
+    <Content Include="Imagens\icones\facebook.png" />
+    <Content Include="Imagens\icones\github.png" />
     <Content Include="Imagens\icones\plus.png" />
     <Content Include="Imagens\icones\school-learn-study-teacher-teaching-256.png" />
     <Content Include="Imagens\icones\search-256.png" />
     <Content Include="Imagens\icones\Search-3-64.png" />
+    <Content Include="Imagens\icones\twitter.png" />
     <Content Include="Imagens\icones\vector_313_08-256.png" />
     <Content Include="Imagens\icones\vector_313_23-256.png" />
     <Content Include="Imagens\iconNavEduc\android-icon-144x144.png" />
