@@ -443,7 +443,6 @@
     <Content Include="Imagens\icones\document_edit.png" />
     <Content Include="Imagens\icones\facebook.png" />
     <Content Include="Imagens\icones\favicon.ico" />
-    <Content Include="Imagens\icones\github.png" />
     <Content Include="Imagens\icones\plus.png" />
     <Content Include="Imagens\icones\school-learn-study-teacher-teaching-256.png" />
     <Content Include="Imagens\icones\search-256.png" />
