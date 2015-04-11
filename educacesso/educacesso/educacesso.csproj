@@ -610,13 +610,6 @@
     <Content Include="ckeditor\.htaccess" />
     <Content Include="Binn\CKEditor.NET.dll.refresh" />
     <Content Include="Imagens\iconNavEduc\manifest.json" />
-    <None Include="Properties\PublishProfiles\educacesso %282%29.pubxml" />
-    <None Include="Properties\PublishProfiles\educacesso %283%29.pubxml" />
-    <None Include="Properties\PublishProfiles\educacesso - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\educacesso - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\educacesso.pubxml" />
-    <None Include="Properties\PublishProfiles\portaleducacesso - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\portaleducacesso - Web Deploy.pubxml" />
     <Content Include="SampleSite\bin\Antlr3.Runtime.dll.refresh" />
     <Content Include="SampleSite\bin\HtmlAgilityPack.dll.refresh" />
     <Content Include="SampleSite\bin\Microsoft.ScriptManager.MSAjax.dll.refresh" />
@@ -624,6 +617,7 @@
     <Content Include="SampleSite\bin\Newtonsoft.Json.dll.refresh" />
     <Content Include="SampleSite\bin\System.Web.Optimization.dll.refresh" />
     <Content Include="SampleSite\bin\WebGrease.dll.refresh" />
+    <None Include="Properties\PublishProfiles\portaleducacesso.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
