@@ -15,8 +15,8 @@ body {
     font-family: 'Questrial', sans-serif;
     font-size: 12.2pt;
     color: #ea8847;
-    border: 1.4pt solid #6965a0;
-    box-shadow: 1px 1px 1px #6965a0;
+    border: 1.4pt solid #939393;
+    box-shadow: 2px 2px 4px #808080;
    
 }
 
@@ -36,7 +36,14 @@ h1{
     font-weight: bold;
     font-family: 'Poiret One', cursive;
     color: #6965a0;
-    text-shadow: 1px 1px 2px #cecece;
+   
+    font-size: 21.5pt;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+    color: #2a292b;
+    color: #8f8b8b;
+    
+    font-weight: bold;
 }
 
 h3#selecione{
@@ -53,6 +60,7 @@ h3#selecione{
     margin-left: 20px;
     font-size: 16pt;
     color: #808080;
+    color: #2a292b;
     font-family:'Questrial', sans-serif;
 }
 
@@ -60,7 +68,7 @@ div#borda{
     display: block;
     margin: 40px 20px 10px 20px;
     
-    border: 1.4px solid #6965a0;
+    border: 1.4px solid #e6e0e0;
     box-shadow: 2px 2px 10px #808080;
     width: 1100px;
 }

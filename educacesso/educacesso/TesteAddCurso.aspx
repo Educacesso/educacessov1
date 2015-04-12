@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
-    <asp:Label ID="titulo" runat="server" CssClass="titulo"> </asp:Label>
+        <asp:Label ID="titulo" runat="server" CssClass="titulo"> </asp:Label>
     </div>
     <asp:MultiView ID="MultiView1" runat="server">
         <asp:View ID="view1" runat="server">
@@ -23,7 +23,7 @@
         <asp:View ID="view" runat="server">
             <div class="container">
                 <h3>Você gostaria de inserir uma lição no seu curso?</h3>
-                <asp:Button ID="btn_pular" runat="server" Text="Pular" OnClick="btn_pular_Click" CssClass="button pularbtn"/>
+                <asp:Button ID="btn_pular" runat="server" Text="Pular" OnClick="btn_pular_Click" CssClass="button pularbtn" />
             </div>
         </asp:View>
 
@@ -32,7 +32,7 @@
                 <h3>Insira um titulo para começar e clique em avançar</h3>
                 <label>Título: </label>
                 <asp:TextBox ID="txt_Titulo" runat="server"></asp:TextBox>
-                
+
             </div>
         </asp:View>
 
@@ -48,17 +48,23 @@
 
         <asp:View ID="view4" runat="server">
             <div class="container">
-                <h3>Crie Exercicios</h3>
+                <h3>Crie Exercicios para está lição</h3>
                 <div class="pergunta">
+                    <label class="pergunta_alternativa">Pergunta</label>
                     <asp:TextBox ID="txt_Pergunta" runat="server" CssClass="pergunta"></asp:TextBox>
-                </div>
-
+               
+                
+                    <label class="pergunta_alternativa">Alternativas</label>
+               </div>
                 <div class="radioButton">
+
                     <asp:RadioButton ID="RadioButton1" runat="server" CssClass="radio" />
                     <asp:TextBox ID="txt_Resposta_A" runat="server" CssClass="respostas"></asp:TextBox>
+                    
                 </div>
+                     
                 <div class="radioButton">
-                    <asp:RadioButton ID="RadioButton2" runat="server" CssClass="radio" />
+                    <asp:RadioButton ID="RadioButton" runat="server" CssClass="radio" />
                     <asp:TextBox ID="txt_Resposta_B" runat="server" CssClass="respostas"></asp:TextBox>
                 </div>
                 <div class="radioButton">

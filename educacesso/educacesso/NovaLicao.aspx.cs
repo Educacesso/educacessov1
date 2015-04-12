@@ -16,6 +16,7 @@ namespace educacesso
                 Response.Redirect("login.aspx");
 
            codigoCurso = Request.QueryString["COD_CURSO"];
+          
 
             titulo.Text = "Adicione mais uma lição no seu curso para compartilhar com outros usuários!";
             if (MultiView1.ActiveViewIndex < 0)
@@ -29,7 +30,7 @@ namespace educacesso
 
             int aux = MultiView1.ActiveViewIndex += 1;
 
-            if (aux > 3)
+            if (aux > 1)
                 btn_avancar.Visible = false;
 
         }

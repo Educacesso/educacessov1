@@ -113,12 +113,12 @@ namespace educacesso
 
         }
 
-        public DataSet Pesquisar(string _txtpesq)
+        public DataSet Pesquisar(string _txtpesq) //Pagina 
         {
             return new ConnectionFactory().AbrirTabela("SELECT * FROM tblCurso WHERE NOME_CURSO LIKE '%" + _txtpesq + "%'");
         }
 
-        public DataSet ExibirCurso(string cod)
+        public DataSet ExibirCurso(string cod) //Pagina Curso
         {
             return new ConnectionFactory().AbrirTabela("SELECT * FROM tblCurso INNER JOIN tblLicao ON tblCurso.COD_CURSO = tblLicao.COD_CURSO WHERE tblLicao.COD_LICAO=" + cod);
         }
