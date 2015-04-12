@@ -13,6 +13,15 @@ namespace educacesso {
     public partial class Curso {
         
         /// <summary>
+        /// views_ control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label views_;
+        
+        /// <summary>
         /// tituloCurso control.
         /// </summary>
         /// <remarks>

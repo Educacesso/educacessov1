@@ -22,13 +22,14 @@ namespace educacesso
         {
             try
             {
-                SqlCommand cmd = new SqlCommand("INSERT INTO tblCurso(NOME_CURSO, RESUMO_CURSO, COD_USUARIO, dataCadastro) VALUES(@NOME, @RESUMO, @IDUSUARIO, @DATACADASTRO)", new ConnectionFactory().getConnection());
+                SqlCommand cmd = new SqlCommand("INSERT INTO tblCurso(NOME_CURSO, RESUMO_CURSO, COD_USUARIO, dataCadastro, VIEWS_CURSO) VALUES(@NOME, @RESUMO, @IDUSUARIO, @DATACADASTRO, @VIEWS)", new ConnectionFactory().getConnection());
                 cmd.Parameters.AddWithValue("@NOME", nome);
                 cmd.Parameters.AddWithValue("@RESUMO", resumo);
                 cmd.Parameters.AddWithValue("@IDUSUARIO", buscarUsuario());
                 cmd.Parameters.AddWithValue("@DATACADASTRO", DateTime.Now);
+                cmd.Parameters.AddWithValue("@VIEWS", 0);
                 cmd.ExecuteNonQuery();
-                if (titulo !="" || conteudo !="")
+                if (titulo != "" || conteudo != "")
                     CadastrarLicao(titulo, conteudo, buscarCurso(nome)); // CADASTRAR 1° LICAO
             }
             catch (Exception erx)
@@ -58,18 +59,18 @@ namespace educacesso
         }
 
 
-        public void CadastrarExercicio(string pergunta, string resposta_a, string resposta_b, string resposta_c, string resposta_d, byte correta)
+        public void CadastrarExercicio(string pergunta, string nome_curso, string resposta_a, string resposta_b, string resposta_c, string resposta_d, string correta)
         {
-            SqlCommand cmd = new SqlCommand("INSERT INTO tblExercicio(PERGUNTA_EXERCICIO, RESPOSTA_A, RESPOSTA_B, RESPOSTA_C, RESPOSTA_D, CORRETA) " +
-                "VALUES(@PERGUNTA, @EXERCICIO, @RESPOSTA_A, @RESPOSTA_B, @RESPOSTA_C, RESPOSTA_D, CORRETA)", new ConnectionFactory().getConnection());
-
+            SqlCommand cmd = new SqlCommand("INSERT INTO tblExercicio(COD_CURSO, PERGUNTA_EXERCICIO, RESPOSTA_A, RESPOSTA_B, RESPOSTA_C, RESPOSTA_D, RESPOSTA_CERTA) " +
+                "VALUES(@COD, @PERGUNTA, @RESPOSTA_A, @RESPOSTA_B, @RESPOSTA_C, @RESPOSTA_D, @RESPOSTA_CERTA)", new ConnectionFactory().getConnection());
+            cmd.Parameters.AddWithValue("@COD", burcarCodLicao(nome_curso));
             cmd.Parameters.AddWithValue("@PERGUNTA", pergunta);
             cmd.Parameters.AddWithValue("@RESPOSTA_A", resposta_a);
             cmd.Parameters.AddWithValue("@RESPOSTA_B", resposta_b);
             cmd.Parameters.AddWithValue("@RESPOSTA_C", resposta_c);
             cmd.Parameters.AddWithValue("@RESPOSTA_D", resposta_d);
-            cmd.Parameters.AddWithValue("@CORRETA", correta);
-
+            cmd.Parameters.AddWithValue("@RESPOSTA_CERTA", correta);
+            cmd.ExecuteNonQuery();
         }
 
         public void DeletarCurso(int index)
@@ -95,6 +96,18 @@ namespace educacesso
             }
             return Codigo;
 
+        }
+
+        public String burcarCodLicao(string conteudo)
+        {
+            SqlCommand cmd = new SqlCommand("SELECT COD_LICAO FROM TBLLICAO WHERE CONTEUDO_LICAO =@CONTEUDO", new ConnectionFactory().getConnection());
+            cmd.Parameters.AddWithValue("@CONTEUDO", conteudo);
+            SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            while (dr.Read())
+            {
+                Codigo = dr["COD_LICAO"].ToString();
+            }
+            return Codigo;
         }
 
 
@@ -125,9 +138,42 @@ namespace educacesso
 
         public DataSet CarregarDropDownList(string codCurso)
         {
+
             return new ConnectionFactory().AbrirTabela("SELECT * FROM tblLicao WHERE COD_CURSO =" + codCurso);
         }
 
+        public void AddViewsCurso(string curso)
+        {
+            SqlCommand cmd = new SqlCommand("UPDATE tblCurso SET VIEWS_CURSO +=1 WHERE COD_CURSO=@COD ", new ConnectionFactory().getConnection());
+            cmd.Parameters.AddWithValue("@COD", curso);
+            cmd.ExecuteNonQuery();
 
+            /*string views_ = ""; //TESTE PARA
+            SqlCommand cmd = new SqlCommand("SELECT VIEWS_CURSO FROM tblCurso WHERE COD_CURSO =@COD", new ConnectionFactory().getConnection());
+            cmd.Parameters.AddWithValue("@COD", curso);
+            SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            while (dr.Read())
+            {
+              views_ = dr["VIEWS_CURSO"].ToString();
+            }
+            if (views_ == null)
+            {
+                
+            }*/
+
+        }
+
+        public string QuantidadeViewsCurso(string curso)
+        {
+            String qtd = "";
+            SqlCommand cmd = new SqlCommand("SELECT VIEWS_CURSO FROM tblCurso WHERE COD_CURSO=@COD", new ConnectionFactory().getConnection());
+            cmd.Parameters.AddWithValue("@COD", curso);
+           SqlDataReader dr= cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            while(dr.Read())
+            {
+                qtd = dr["VIEWS_CURSO"].ToString();
+            }
+            return qtd;
+        }
     }
 }

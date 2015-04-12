@@ -58,21 +58,22 @@
                </div>
                 <div class="radioButton">
 
-                    <asp:RadioButton ID="RadioButton1" runat="server" CssClass="radio" />
+                    <asp:RadioButton ID="RadioButton1" runat="server" CssClass="radio"  GroupName="item1" OnCheckedChanged="RadioButton1_CheckedChanged" AutoPostBack="true"/>
                     <asp:TextBox ID="txt_Resposta_A" runat="server" CssClass="respostas"></asp:TextBox>
                     
                 </div>
                      
+
                 <div class="radioButton">
-                    <asp:RadioButton ID="RadioButton" runat="server" CssClass="radio" />
+                    <asp:RadioButton ID="RadioButton2" runat="server" CssClass="radio" GroupName="item1" OnCheckedChanged="RadioButton2_CheckedChanged" AutoPostBack="true"/>
                     <asp:TextBox ID="txt_Resposta_B" runat="server" CssClass="respostas"></asp:TextBox>
                 </div>
                 <div class="radioButton">
-                    <asp:RadioButton ID="RadioButton3" runat="server" CssClass="radio" />
+                    <asp:RadioButton ID="RadioButton3" runat="server" CssClass="radio" GroupName="item1" OnCheckedChanged="RadioButton3_CheckedChanged" AutoPostBack="true"/>
                     <asp:TextBox ID="txt_Resposta_C" runat="server" CssClass="respostas"></asp:TextBox>
                 </div>
                 <div class="radioButton">
-                    <asp:RadioButton ID="RadioButton4" runat="server" CssClass="radio" />
+                    <asp:RadioButton ID="RadioButton4" runat="server" CssClass="radio" GroupName="item1" OnCheckedChanged="RadioButton4_CheckedChanged" AutoPostBack="true"/>
                     <asp:TextBox ID="txt_Resposta_D" runat="server" CssClass="respostas"></asp:TextBox>
                 </div>
             </div>
@@ -92,5 +93,5 @@
 
     <asp:Button ID="btn_avancar" runat="server" Text="Avançar" OnClick="btn_avancar_Click" CssClass="button" />
 
-    <a href="inicio.aspx">Cancelar</a>
+    
 </asp:Content>

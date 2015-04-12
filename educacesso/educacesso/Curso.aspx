@@ -4,8 +4,8 @@
     <link href="css/CursoView.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-
+    <asp:Label runat="server" CssClass="views">Visualizações:</asp:Label>
+    <asp:Label ID="views_" runat="server" CssClass="views">Views</asp:Label>
     <asp:Label ID="tituloCurso" runat="server"></asp:Label>
     <asp:Label ID="conteudoCurso" runat="server"></asp:Label>
     

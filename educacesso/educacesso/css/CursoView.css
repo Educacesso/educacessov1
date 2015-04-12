@@ -7,6 +7,15 @@
 body {
 }
 
+.views{
+    position:relative;
+    left: 870px;
+    font-size: 17pt;
+    color: #6965a0;
+    font-family: Poiret One;
+    font-weight: bolder;
+}
+
 .dropDownListar{
     position: relative;
     left: 50px;

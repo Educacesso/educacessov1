@@ -11,6 +11,7 @@ namespace educacesso
 {
     public partial class Curso : System.Web.UI.Page
     {
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             if (User.Identity.IsAuthenticated != true)
@@ -22,13 +23,16 @@ namespace educacesso
 
                 try
                 {
-
+                   
+                    new CursoAddDAO().AddViewsCurso(Request.QueryString["COD_CURSO"]);
+                    views_.Text = new CursoAddDAO().QuantidadeViewsCurso(Request.QueryString["COD_CURSO"]);
                     DropDownList1.DataSource = new CursoAddDAO().CarregarDropDownList(Request.QueryString["COD_CURSO"]);
                     DropDownList1.DataTextField = "TITULO_LICAO";
                     DropDownList1.DataValueField = "COD_LICAO";
                     DropDownList1.DataBind();
                     DropDownList1.Items.Add(new ListItem("Selecione uma Lição", "0"));
                     DropDownList1.SelectedValue = "0";
+                  
                 }
                 catch
                 {
