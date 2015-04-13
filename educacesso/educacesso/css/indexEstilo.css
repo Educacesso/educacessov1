@@ -8,72 +8,95 @@
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 
-body{
-
+body {
+    /*
+ background-color: #dddcc2;
+ background-color: #58a1fa;
+ background-color: #fae581;*/
+    background-color: #6c708a;
 }
 
-section#indexCorpo{
+
+div#tituloCorpo {
+    position: relative;
+    top: -45px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 1200px;
+    height: 55px;
+    
+    background-color: #ffac33;
+}
+
+h1#h1Corpo {
+    text-align: center;
+    color: #ffffff;
+    font-size: 22pt;
+    font-weight: bolder;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 55px;
+}
+
+section#indexCorpo {
     width: auto;
     height: auto;
     margin-bottom: 45px;
 }
 
-div.backImagem{
+div.backImagem {
     width: 600px;
-    position:relative;
+    position: relative;
     background-color: #e0dcdc;
     background-color: #888888;
     height: 250px;
     left: 120px;
     margin-top: 40px;
-    
 }
 
-div.backImagem2{
+div.backImagem2 {
     width: 600px;
-    position:relative;
+    position: relative;
     left: 120px;
     height: 251px;
     margin-top: 40px;
     background-color: #9c856b;
 }
 
-a#linkImagem{
+a#linkImagem {
     display: inline-block;
     font-weight: bolder;
     margin-top: 10px;
     color: rgba(255,165,20,1);
 }
 
-a#linkImagem:hover{
-    color: #e9bc5f;
-}
+    a#linkImagem:hover {
+        color: #e9bc5f;
+    }
 
-h1.indexTitulo{
-    position:absolute;
-    z-index:3;
+h1.indexTitulo {
+    position: absolute;
+    z-index: 3;
     bottom: 170px;
     left: 70px;
-    color: #ffffff; 
-    font-family:'Ubuntu Condensed';
+    color: #ffffff;
+    font-family: 'Ubuntu Condensed';
     font-size: 22pt;
 }
 
-p.imagemP{
+p.imagemP {
     text-indent: 40pt;
-     position:absolute;
+    position: absolute;
     text-align: justify;
-    z-index:3;
+    z-index: 3;
     bottom: 30px;
     left: 40px;
     color: #ffffff;
-    width:470px;
+    width: 470px;
     font-size: 18pt;
-  font-family:'Ubuntu Condensed';
+    font-family: 'Ubuntu Condensed';
 }
 
-img.fundoImagem{
-    position:relative;
+img.fundoImagem {
+    position: relative;
     left: 600px;
-
 }

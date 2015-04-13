@@ -8,6 +8,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
     <section id="indexCorpo">
+        <div id="tituloCorpo"><h1 id="h1Corpo">O que posso fazer no educacesso?</h1></div>
 
         <div class="backImagem">
 
