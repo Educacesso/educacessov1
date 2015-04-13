@@ -435,6 +435,7 @@
     <Content Include="css\sobre.css" />
     <Content Include="Curso.aspx" />
     <Content Include="homeCurso.aspx" />
+    <Content Include="Imagens\conhecimento.jpg" />
     <Content Include="Imagens\icones\Book-2.png" />
     <Content Include="Imagens\icones\book-256.png" />
     <Content Include="Imagens\icones\circle-school-learn-study-subject-math-pencil-edit-256.png" />
@@ -445,12 +446,14 @@
     <Content Include="Imagens\icones\favicon.ico" />
     <Content Include="Imagens\icones\github.png" />
     <Content Include="Imagens\icones\plus.png" />
+    <Content Include="Imagens\icones\school and education 04.jpg" />
     <Content Include="Imagens\icones\school-learn-study-teacher-teaching-256.png" />
     <Content Include="Imagens\icones\search-256.png" />
     <Content Include="Imagens\icones\Search-3-64.png" />
     <Content Include="Imagens\icones\twitter.png" />
     <Content Include="Imagens\icones\vector_313_08-256.png" />
     <Content Include="Imagens\icones\vector_313_23-256.png" />
+    <Content Include="Imagens\IdeiaSchool.jpg" />
     <Content Include="index.aspx" />
     <Content Include="inicio.aspx" />
     <Content Include="listaCursos.aspx" />
