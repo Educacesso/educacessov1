@@ -80,9 +80,9 @@
                 <p>Educacesso - Desenvolvido na BandTec - 2015</p>
                 <p>
                     <a href="#">
-                        <img src="Imagens/icones/facebook.png" alt="Facebook Educacesso" width="50" height="50" /></a> &nbsp; &nbsp; <a href="https://github.com/Educacesso/">
-                            <img src="Imagens/icones/github.png" alt="GitHub Educacesso" width="50" height="50" /></a> &nbsp; &nbsp; <a href="#">
-                                <img src="Imagens/icones/twitter.png" alt="Twitter Educacesso" width="50" height="50" /></a>
+                        <a href="https://www.facebook.com/portaleducacesso"> <img src="Imagens/icones/facebook.png" alt="Facebook Educacesso" width="50" height="50" /></a>  
+						  <a href="https://github.com/Educacesso/">    <img src="Imagens/icones/github.png" alt="GitHub Educacesso" width="50" height="50" /></a> 
+                             <a href="https://twitter.com/educacesso">   <img src="Imagens/icones/twitter.png" alt="Twitter Educacesso" width="50" height="50" /></a> 
                 </p>
             </footer>
         </div>

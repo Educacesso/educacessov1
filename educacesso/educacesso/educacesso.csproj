@@ -436,7 +436,9 @@
     <Content Include="css\sobre.css" />
     <Content Include="Curso.aspx" />
     <Content Include="homeCurso.aspx" />
+    <Content Include="Imagens\andreza.png" />
     <Content Include="Imagens\conhecimento.jpg" />
+    <Content Include="Imagens\Flavia.png" />
     <Content Include="Imagens\icones\Book-2.png" />
     <Content Include="Imagens\icones\book-256.png" />
     <Content Include="Imagens\icones\circle-school-learn-study-subject-math-pencil-edit-256.png" />
@@ -454,6 +456,8 @@
     <Content Include="Imagens\icones\vector_313_08-256.png" />
     <Content Include="Imagens\icones\vector_313_23-256.png" />
     <Content Include="Imagens\IdeiaSchool.jpg" />
+    <Content Include="Imagens\Thiago.png" />
+    <Content Include="Imagens\Vini.png" />
     <Content Include="index.aspx" />
     <Content Include="inicio.aspx" />
     <Content Include="listaCursos.aspx" />
@@ -570,6 +574,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sobre.aspx.cs">
       <DependentUpon>Sobre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Sobre.aspx.designer.cs">
       <DependentUpon>Sobre.aspx</DependentUpon>

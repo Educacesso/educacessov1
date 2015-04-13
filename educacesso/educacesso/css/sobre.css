@@ -4,16 +4,21 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web);
 
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+
 body {
  
     top: -10px;
-    background-color: rgba(120,142,225,0.8);
+    background-color: #B5ECB2;
 }
 
 
 a{
     text-decoration: none;
     color: #808080;
+	font-family:'Ubuntu Condensed';
 }
 
 a:hover{
@@ -38,11 +43,23 @@ section#corpo h1{
 	  
     position:relative;
     right: -60px;
-   font-size: 24pt;
-    font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 24pt;
+    font-family:'Ubuntu Condensed';
     color: #2a292b;
     font-weight: bold;
 
+}
+
+#dads{
+
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    font-weight:#ffffff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+  
 }
 
 
@@ -51,8 +68,8 @@ article#dados {
     position:relative;
     right: -60px;
     font-size: 15pt;
-    font-family: 'Questrial', sans-serif;
-    color: #2d64fe;
+    font-family:'Ubuntu Condensed';
+    color: #000;
     font-weight: bolder;
 
 }
@@ -72,7 +89,7 @@ aside#lateral{
     position:relative;
     right: 420px;
     font-size: 24pt;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family:'Ubuntu Condensed';
     color: #2a292b;
     font-weight: bold;
    
@@ -83,13 +100,22 @@ aside#lateral{
     position:relative;
     right: 420px;
     font-size: 24pt;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family:'Ubuntu Condensed';
     color: #2a292b;
     font-weight: bold;
    
 }
 
-
+#lateral h3{  
+	margin-top:50px;  
+    position:relative;
+    right: 390px;
+    font-size: 24pt;
+	font-family:'Ubuntu Condensed';
+    color: #2a292b;
+    font-weight: bold;
+   
+}
 
 article#endereco{   
 	margin-top:-10px;  
@@ -97,8 +123,8 @@ article#endereco{
     position:relative;
     right: 430px;
     font-size: 20pt;
-    font-family: 'Questrial', sans-serif;
-    color: #2d64fe;
+    font-family:'Ubuntu Condensed';
+    color: #888888;
 	text-align: center;
   
 	top:-40px;
@@ -110,9 +136,15 @@ article#sobre{
     position:relative;
     right: 420px;
     font-size: 20pt;
-    font-family: 'Questrial', sans-serif;
-    color: #2d64fe;
+	font-family:'Ubuntu Condensed';
+    color: #888888;
 	text-align: center;
+    
+}
+
+article#Equipe{
+    margin-top:30px;  
+	margin-left:-470px;
     
 }
 
