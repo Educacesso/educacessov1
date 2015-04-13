@@ -8,6 +8,10 @@
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 
+body{
+
+}
+
 section#indexCorpo{
     width: auto;
     height: auto;
@@ -41,7 +45,7 @@ a#linkImagem{
     color: rgba(255,165,20,1);
 }
 
-a#linkImg:hover{
+a#linkImagem:hover{
     color: #e9bc5f;
 }
 
@@ -56,6 +60,7 @@ h1.indexTitulo{
 }
 
 p.imagemP{
+    text-indent: 40pt;
      position:absolute;
     text-align: justify;
     z-index:3;
