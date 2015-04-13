@@ -8,7 +8,13 @@
 @import url(http://fonts.googleapis.com/css?family=Poiret+One);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 
-div.backImg{
+section#indexCorpo{
+    width: auto;
+    height: auto;
+    margin-bottom: 45px;
+}
+
+div.backImagem{
     width: 600px;
     position:relative;
     background-color: #e0dcdc;
@@ -19,7 +25,7 @@ div.backImg{
     
 }
 
-div.backImg2{
+div.backImagem2{
     width: 600px;
     position:relative;
     left: 120px;
@@ -28,7 +34,7 @@ div.backImg2{
     background-color: #9c856b;
 }
 
-a#linkImg{
+a#linkImagem{
     display: inline-block;
     font-weight: bolder;
     margin-top: 10px;
@@ -39,7 +45,7 @@ a#linkImg:hover{
     color: #e9bc5f;
 }
 
-h1{
+h1.indexTitulo{
     position:absolute;
     z-index:3;
     bottom: 170px;
@@ -49,7 +55,7 @@ h1{
     font-size: 22pt;
 }
 
-p.imgP{
+p.imagemP{
      position:absolute;
     text-align: justify;
     z-index:3;
@@ -61,7 +67,7 @@ p.imgP{
   font-family:'Ubuntu Condensed';
 }
 
-img.background{
+img.fundoImagem{
     position:relative;
     left: 600px;
 

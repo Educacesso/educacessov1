@@ -7,19 +7,24 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
-    
-        <div class="backImg">
-           
-            <h1>Crie seus cursos</h1>
-            <p class="imgP">No educacesso você pode criar seus próprios cursos e compartilhar com quem quiser. Com as nossas ferramentas fica fácil ter seus cursos online, <a id="linkImg" href="inicio.aspx"> venha conferir!</a></p>
+    <section id="indexCorpo">
+
+        <div class="backImagem">
+
+            <img class="fundoImagem" src="Imagens/IdeiaSchool.jpg" />
+            <h1 class="indexTitulo">Crie seus cursos</h1>
+            <p class="imagemP">No educacesso você pode criar seus próprios cursos e compartilhar com quem quiser. Com as nossas ferramentas fica fácil ter seus cursos online, <a id="linkImagem" href="inicio.aspx"> venha conferir!</a></p>
         </div>
-        <div class="backImg2">
-            <h1>Aprenda</h1>
-            <p class="imgP">Aprenda fazendo cursos sobre qualquer tema disponivel no educacesso, tenha acesso a todos os cursos feitos por outros usuários, faça exercícios, cresça no ranking e tudo isso grátis!</p>
-            
+
+        <div class="backImagem2">
+
+            <h1 class="indexTitulo">Aprenda</h1>
+            <p class="imagemP">Aprenda fazendo cursos sobre qualquer tema disponivel no educacesso, tenha acesso a todos os cursos feitos por outros usuários, faça exercícios, cresça no ranking e tudo isso grátis!</p>
+            <img class="fundoImagem" src="Imagens/conhecimento.jpg" />
+
         </div>
        
-
+    </section>
 
 
 
