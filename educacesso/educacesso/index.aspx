@@ -2,12 +2,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 
-    <link href="../css/mainEstilo.css" rel="stylesheet" />
+    <link href="css/indexEstilo.css" rel="stylesheet" />
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 
-    <section id="corpoA">
+    
         <div class="backImg">
             <img class="background" src="Imagens/IdeiaSchool.jpg" />
             <h1>Crie seus cursos</h1>
@@ -20,7 +20,7 @@
         </div>
        
 
-    </section>
+
 
 
 </asp:Content>

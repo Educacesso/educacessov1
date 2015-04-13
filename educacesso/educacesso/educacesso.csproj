@@ -430,6 +430,7 @@
     <Content Include="css\Buscar.css" />
     <Content Include="css\CadastroCursoCss.css" />
     <Content Include="css\CursoView.css" />
+    <Content Include="css\indexEstilo.css" />
     <Content Include="css\inicioUser.css" />
     <Content Include="css\Meus Cursos.css" />
     <Content Include="css\sobre.css" />
@@ -458,7 +459,6 @@
     <Content Include="inicio.aspx" />
     <Content Include="listaCursos.aspx" />
     <Content Include="css\login.css" />
-    <Content Include="css\mainEstilo.css" />
     <Content Include="css\StyleSheet.css" />
     <Content Include="Imagens\arvoreTransp.png" />
     <Content Include="Imagens\enem-pequeno.png" />

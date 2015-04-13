@@ -17,64 +17,7 @@ body {
 }
 
 
-div.backImg{
-    width: 600px;
-    position:relative;
-    background-color: #e0dcdc;
-    background-color: #888888;
-    height: 250px;
-    left: 120px;
-    margin-top: 40px;
-    
-}
 
-div.backImg2{
-    width: 600px;
-    position:relative;
-    left: 120px;
-    height: 251px;
-    margin-top: 40px;
-    background-color: #9c856b;
-}
-
-a#linkImg{
-    display: inline-block;
-    font-weight: bolder;
-    margin-top: 10px;
-    color: rgba(255,165,20,1);
-}
-
-a#linkImg:hover{
-    color: #e9bc5f;
-}
-
-h1{
-    position:absolute;
-    z-index:3;
-    bottom: 170px;
-    left: 70px;
-    color: #ffffff; 
-    font-family:'Ubuntu Condensed';
-    font-size: 22pt;
-}
-
-p.imgP{
-     position:absolute;
-    text-align: justify;
-    z-index:3;
-    bottom: 30px;
-    left: 40px;
-    color: #ffffff;
-    width:470px;
-    font-size: 18pt;
-  font-family:'Ubuntu Condensed';
-}
-
-img.background{
-    position:relative;
-    left: 600px;
-
-}
 
 div#interface{
     background-color: #ffffff;
