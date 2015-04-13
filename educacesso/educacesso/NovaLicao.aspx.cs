@@ -10,13 +10,14 @@ namespace educacesso
     public partial class NovaLicao : System.Web.UI.Page
     {
         String codigoCurso;
+        String resposta_certa;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (User.Identity.IsAuthenticated != true)
                 Response.Redirect("login.aspx");
 
            codigoCurso = Request.QueryString["COD_CURSO"];
-          
+           
 
             titulo.Text = "Adicione mais uma lição no seu curso para compartilhar com outros usuários!";
             if (MultiView1.ActiveViewIndex < 0)
@@ -64,7 +65,18 @@ namespace educacesso
 
         protected void btn_cadastrar_exercicio_Click(object sender, EventArgs e)
         {
-            new CursoAddDAO().CadastrarExercicio(txt_Pergunta.Text, CKEditorControl1.Text.Trim(), txt_Resposta_A.Text, txt_Resposta_B.Text, txt_Resposta_C.Text, txt_Resposta_D.Text);
+            new CursoAddDAO().CadastrarExercicio(txt_Pergunta.Text, codigoCurso, txt_Resposta_A.Text, txt_Resposta_B.Text, txt_Resposta_C.Text, txt_Resposta_D.Text, resposta_certa);
+        }
+
+        protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            string resposta = txt_Resposta_A.Text;
+            Resposta_certa(resposta);
+        }
+
+        public void Resposta_certa(string resposta)
+        {
+            resposta_certa = resposta;
         }
     }
 }

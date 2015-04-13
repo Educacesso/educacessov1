@@ -61,7 +61,7 @@
             </div>
             <div class="radioButton">
 
-                <asp:RadioButton ID="RadioButton1" runat="server" CssClass="radio" GroupName="item1" />
+                <asp:RadioButton ID="RadioButton1" runat="server" CssClass="radio" GroupName="item1" OnCheckedChanged="RadioButton1_CheckedChanged" />
                 <asp:TextBox ID="txt_Resposta_A" runat="server" CssClass="respostas"></asp:TextBox>
 
             </div>
