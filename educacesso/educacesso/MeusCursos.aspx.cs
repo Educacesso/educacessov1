@@ -47,6 +47,7 @@ namespace educacesso
 
         protected void ListView_SelectedIndexChanging(object sender, ListViewSelectEventArgs e)
         {
+           
             ListView.SelectedIndex = e.NewSelectedIndex;
             int i = ListView.SelectedIndex;
 
@@ -58,11 +59,11 @@ namespace educacesso
                 Response.Redirect("NovaLicao.aspx?COD_CURSO=" + a + "");
 
             }
-
+            
         }
 
   
-
+        
         protected void ListView_ItemDeleting(object sender, ListViewDeleteEventArgs e)
         {
             ListView.SelectedIndex = e.ItemIndex;

@@ -10,7 +10,13 @@
     <asp:Label ID="titulo" runat="server" CssClass="titulo"> </asp:Label>
 
     <asp:MultiView ID="MultiView1" runat="server">
-
+        <asp:View ID="view" runat="server">
+            <div class="container">
+                <h3>Você quer inserir um novo exercicio ou uma nova lição em seu curso?</h3>
+                <asp:Button ID="btn_licao" runat="server" Text="Nova Licão" OnClick="btn_licao_Click" />
+                <asp:Button ID="btn_exercicio" runat="server" Text="Novo Exercicio" OnClick="btn_exercicio_Click" />
+            </div>
+        </asp:View>
         <asp:View ID="view1" runat="server">
             <div class="container">
                 <h3>Inseria uma nova lição em seu curso de:</h3>
@@ -38,6 +44,17 @@
             <asp:Button ID="btn_cadastrar" runat="server" Text="Enviar" OnClick="btn_cadastrar_Click" CssClass="buttonSubmit" />
         </asp:View>
 
+        <asp:View ID="view4" runat="server">
+            <div class="container">
+                <h3>insira o exercicio</h3>
+            </div>
+        </asp:View>
+        <asp:View ID="view5" runat="server">
+            <div class="container">
+                <h3>Parabéns, para concluir clique em enviar!</h3>
+            </div>
+            <asp:Button ID="btn_cadastrar_exercicio" runat="server" Text="Novo Exercicio" CssClass="buttonSubmit" />
+        </asp:View>
     </asp:MultiView>
 
     <asp:Button ID="btn_avancar" runat="server" Text="Avançar" OnClick="btn_avancar_Click" CssClass="button" />

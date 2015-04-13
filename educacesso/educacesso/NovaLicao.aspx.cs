@@ -30,7 +30,7 @@ namespace educacesso
 
             int aux = MultiView1.ActiveViewIndex += 1;
 
-            if (aux > 1)
+            if (aux > 2)
                 btn_avancar.Visible = false;
 
         }
@@ -50,6 +50,16 @@ namespace educacesso
             {
                 throw new Exception(erx.ToString());
             }
+        }
+
+        protected void btn_licao_Click(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex += 1;
+        }
+
+        protected void btn_exercicio_Click(object sender, EventArgs e)
+        {
+            MultiView1.ActiveViewIndex +=4;
         }
     }
 }
