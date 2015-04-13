@@ -48,12 +48,43 @@
             <div class="container">
                 <h3>insira o exercicio</h3>
             </div>
+
+            <div class="pergunta">
+                <div class="container2">
+
+                    <label class="pergunta_alternativa">Pergunta</label>
+                    <asp:TextBox ID="txt_Pergunta" runat="server" CssClass="pergunta2"></asp:TextBox>
+
+
+                    <label class="pergunta_alternativa">Alternativas</label>
+                </div>
+            </div>
+            <div class="radioButton">
+
+                <asp:RadioButton ID="RadioButton1" runat="server" CssClass="radio" GroupName="item1" />
+                <asp:TextBox ID="txt_Resposta_A" runat="server" CssClass="respostas"></asp:TextBox>
+
+            </div>
+
+
+            <div class="radioButton">
+                <asp:RadioButton ID="RadioButton2" runat="server" CssClass="radio" GroupName="item1" />
+                <asp:TextBox ID="txt_Resposta_B" runat="server" CssClass="respostas"></asp:TextBox>
+            </div>
+            <div class="radioButton">
+                <asp:RadioButton ID="RadioButton3" runat="server" CssClass="radio" GroupName="item1" />
+                <asp:TextBox ID="txt_Resposta_C" runat="server" CssClass="respostas"></asp:TextBox>
+            </div>
+            <div class="radioButton">
+                <asp:RadioButton ID="RadioButton4" runat="server" CssClass="radio" GroupName="item1" />
+                <asp:TextBox ID="txt_Resposta_D" runat="server" CssClass="respostas"></asp:TextBox>
+            </div>
         </asp:View>
         <asp:View ID="view5" runat="server">
             <div class="container">
                 <h3>Parabéns, para concluir clique em enviar!</h3>
             </div>
-            <asp:Button ID="btn_cadastrar_exercicio" runat="server" Text="Novo Exercicio" CssClass="buttonSubmit" />
+            <asp:Button ID="btn_cadastrar_exercicio" runat="server" Text="Novo Exercicio" CssClass="buttonSubmit" OnClick="btn_cadastrar_exercicio_Click" />
         </asp:View>
     </asp:MultiView>
 

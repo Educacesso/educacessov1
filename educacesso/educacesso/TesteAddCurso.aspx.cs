@@ -34,7 +34,7 @@ namespace educacesso
             {
 
                 new CursoAddDAO().CadastraCurso(txt_nome.Text.Trim(), txt_Titulo.Text.Trim(), txt_Resumo.Text.Trim(), CKEditorControl1.Text.Trim());
-               // new CursoAddDAO().CadastrarExercicio(txt_Pergunta.Text, CKEditorControl1.Text.Trim(), txt_Resposta_A.Text, txt_Resposta_B.Text, txt_Resposta_C.Text, txt_Resposta_D.Text, resposta_correta);
+               
                 MultiView1.Visible = false;
                 titulo.Text = "CURSO CADASTRADO COM SUCESSO";
             }

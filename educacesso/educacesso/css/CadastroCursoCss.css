@@ -43,6 +43,13 @@ div.container{
     text-align: center;
     height:auto;
 }
+
+div.container2{
+    position:absolute;
+   
+    left: 200px;
+}
+
 div.container h3{
     font-size: 15pt;
     color: #808080;
@@ -129,6 +136,14 @@ Input[type="text"]{
     height:40px;
 }
 
+.pergunta2{
+     position: relative;
+     right: 200px;
+    margin-left: 0px;
+    width: 620px;
+    height:40px;
+}
+
 div .radioButton{
     position:relative;
     width: 370px;
@@ -155,8 +170,8 @@ div .radioButton{
 }
 
 div .pergunta label{
-  
-    border-bottom: 1px solid #808080;
+
+  border-bottom: 1px solid #808080;
 }
 .pergunta_alternativa{
     position:relative;

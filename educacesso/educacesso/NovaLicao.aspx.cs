@@ -61,5 +61,10 @@ namespace educacesso
         {
             MultiView1.ActiveViewIndex +=4;
         }
+
+        protected void btn_cadastrar_exercicio_Click(object sender, EventArgs e)
+        {
+            new CursoAddDAO().CadastrarExercicio(txt_Pergunta.Text, CKEditorControl1.Text.Trim(), txt_Resposta_A.Text, txt_Resposta_B.Text, txt_Resposta_C.Text, txt_Resposta_D.Text);
+        }
     }
 }
