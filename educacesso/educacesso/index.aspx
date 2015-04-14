@@ -20,7 +20,7 @@
         <div class="backImagem2">
 
             <h1 class="indexTitulo">Aprenda</h1>
-            <p class="imagemP">Aprenda fazendo cursos sobre qualquer tema disponível no Educacesso e tenha acesso a todos os cursos feitos por outros usuários, faça exercícios, cresça no ranking e tudo isso grátis!.</p>
+            <p class="imagemP">Aprenda fazendo cursos sobre qualquer tema disponível no Educacesso e tenha acesso a todos os cursos feitos por outros usuários. Faça exercícios! Cresça no ranking! E tudo isso grátis!</p>
             <img class="fundoImagem" src="Imagens/conhecimento.jpg" />
 
         </div>
