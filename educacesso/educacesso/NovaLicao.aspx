@@ -68,15 +68,15 @@
 
 
             <div class="radioButton">
-                <asp:RadioButton ID="RadioButton2" runat="server" CssClass="radio" GroupName="item1" />
+                <asp:RadioButton ID="RadioButton2" runat="server" CssClass="radio" GroupName="item1" OnCheckedChanged="RadioButton2_CheckedChanged" />
                 <asp:TextBox ID="txt_Resposta_B" runat="server" CssClass="respostas"></asp:TextBox>
             </div>
             <div class="radioButton">
-                <asp:RadioButton ID="RadioButton3" runat="server" CssClass="radio" GroupName="item1" />
+                <asp:RadioButton ID="RadioButton3" runat="server" CssClass="radio" GroupName="item1" OnCheckedChanged="RadioButton3_CheckedChanged" />
                 <asp:TextBox ID="txt_Resposta_C" runat="server" CssClass="respostas"></asp:TextBox>
             </div>
             <div class="radioButton">
-                <asp:RadioButton ID="RadioButton4" runat="server" CssClass="radio" GroupName="item1" />
+                <asp:RadioButton ID="RadioButton4" runat="server" CssClass="radio" GroupName="item1" OnCheckedChanged="RadioButton4_CheckedChanged" />
                 <asp:TextBox ID="txt_Resposta_D" runat="server" CssClass="respostas"></asp:TextBox>
             </div>
         </asp:View>
@@ -86,6 +86,7 @@
             </div>
             <asp:Button ID="btn_cadastrar_exercicio" runat="server" Text="Novo Exercicio" CssClass="buttonSubmit" OnClick="btn_cadastrar_exercicio_Click" />
         </asp:View>
+	
     </asp:MultiView>
 
     <asp:Button ID="btn_avancar" runat="server" Text="Avançar" OnClick="btn_avancar_Click" CssClass="button" />

@@ -59,8 +59,8 @@ Somos um grupo de estudantes da faculdade Bandtec. Criamos o site com o intuito 
 		</article>
 
         <h3>EQUIPE</h3>
-        <article id="Equipe"
-  
+        <article id="Equipe">
+		
         <a href="https://br.linkedin.com/in/vrjusto"><img src="Imagens/Vini.png" />
         <a href="https://br.linkedin.com/in/andrezacristina"><img src="Imagens/andreza.png" />
         <a href="https://br.linkedin.com/pub/thiago-cavalcante-villaverde/8b/30b/572"> <img src="Imagens/Thiago.png" />

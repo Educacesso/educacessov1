@@ -580,6 +580,7 @@
     <Compile Include="Sobre.aspx.designer.cs">
       <DependentUpon>Sobre.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Teste.cs" />
     <Compile Include="TesteAddCurso.aspx.cs">
       <DependentUpon>TesteAddCurso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

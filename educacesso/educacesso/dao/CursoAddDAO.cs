@@ -59,19 +59,28 @@ namespace educacesso
         }
 
 
+
+
         public void CadastrarExercicio(string pergunta, string cod_curso, string resposta_a, string resposta_b, string resposta_c, string resposta_d, string resposta_certa)
         {//FALTA IMPLEMENTAR A RESPOSTA CERTA
             SqlCommand cmd = new SqlCommand("INSERT INTO tblExercicio(COD_CURSO, PERGUNTA_EXERCICIO, RESPOSTA_A, RESPOSTA_B, RESPOSTA_C, RESPOSTA_D, RESPOSTA_CERTA) " +
                 "VALUES(@COD, @PERGUNTA, @RESPOSTA_A, @RESPOSTA_B, @RESPOSTA_C, @RESPOSTA_D, @RESPOSTA_CERTA)", new ConnectionFactory().getConnection());
-            cmd.Parameters.AddWithValue("@COD", burcarCodLicao(cod_curso));
+            cmd.Parameters.AddWithValue("@COD", cod_curso);
             cmd.Parameters.AddWithValue("@PERGUNTA", pergunta);
             cmd.Parameters.AddWithValue("@RESPOSTA_A", resposta_a);
             cmd.Parameters.AddWithValue("@RESPOSTA_B", resposta_b);
             cmd.Parameters.AddWithValue("@RESPOSTA_C", resposta_c);
-            cmd.Parameters.AddWithValue("@RESPOSTA_D", resposta_d);
+			cmd.Parameters.AddWithValue("@RESPOSTA_D", resposta_d);
+			cmd.Parameters.AddWithValue("@RESPOSTA_CERTA", resposta_certa);
            
             cmd.ExecuteNonQuery();
         }
+
+
+
+
+
+
 
         public void DeletarCurso(int index)
         {
