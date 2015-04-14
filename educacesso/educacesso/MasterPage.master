@@ -9,6 +9,10 @@
     <link rel="shortcut icon" href="Imagens/icones/favicon.ico" />
     <!---->
 
+    <!-- Responsibilidade Mobile -->
+        <meta name="viewport" content="width=device-width"/>
+    <!---->
+
     <title></title>
 
     <link href="../css/StyleSheet.css" rel="stylesheet" />
