@@ -433,6 +433,7 @@
     <Content Include="css\indexEstilo.css" />
     <Content Include="css\inicioUser.css" />
     <Content Include="css\Meus Cursos.css" />
+    <Content Include="css\mobile.css" />
     <Content Include="css\sobre.css" />
     <Content Include="Curso.aspx" />
     <Content Include="homeCurso.aspx" />
