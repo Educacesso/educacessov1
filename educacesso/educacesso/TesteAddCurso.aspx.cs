@@ -10,7 +10,7 @@ namespace educacesso
 {
     public partial class TesteAddCurso : System.Web.UI.Page
     {
-        string resposta_correta = "";
+       
         protected void Page_Load(object sender, EventArgs e)
         {
             if (User.Identity.IsAuthenticated != true)
@@ -49,7 +49,7 @@ namespace educacesso
 
             int aux = MultiView1.ActiveViewIndex += 1;
 
-            if (aux > 4)
+            if (aux > 3)
                 btn_avancar.Visible = false;
 
         }
@@ -69,25 +69,6 @@ namespace educacesso
             return pular;
         }
 
-        protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            resposta_correta = txt_Resposta_A.Text;
-        }
-
-        protected void RadioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            resposta_correta = txt_Resposta_B.Text;
-
-        }
-
-        protected void RadioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            resposta_correta = txt_Resposta_C.Text;
-        }
-
-        protected void RadioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-            resposta_correta = txt_Resposta_D.Text;
-        }
+      
     }
 }

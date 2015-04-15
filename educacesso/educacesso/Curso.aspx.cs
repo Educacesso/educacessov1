@@ -48,14 +48,19 @@ namespace educacesso
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
-            if (MultiView1.ActiveViewIndex < 0 && MultiView1.ActiveViewIndex <= 1)
+            if (MultiView1.ActiveViewIndex < 0)
             {
-                MultiView1.ActiveViewIndex += 1;
+                MultiView1.ActiveViewIndex = 0;
             }
             DropDownList1.DataValueField = DropDownList1.SelectedValue;
             FormView1.DataSource = new CursoAddDAO().ExibirCurso(DropDownList1.DataValueField);
             FormView1.DataBind();
 
         }
+
+		protected void btn_atividade_Click(object sender, EventArgs e)
+		{
+			MultiView1.ActiveViewIndex += 1;
+		}
     }
 }

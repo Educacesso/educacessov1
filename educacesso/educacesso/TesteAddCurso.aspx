@@ -46,40 +46,8 @@
             </div>
         </asp:View>
 
+
         <asp:View ID="view4" runat="server">
-            <div class="container">
-                <h3>Crie Exercicios para está lição</h3>
-                <div class="pergunta">
-                    <label class="pergunta_alternativa">Pergunta</label>
-                    <asp:TextBox ID="txt_Pergunta" runat="server" CssClass="pergunta"></asp:TextBox>
-               
-                
-                    <label class="pergunta_alternativa">Alternativas</label>
-               </div>
-                <div class="radioButton">
-
-                    <asp:RadioButton ID="RadioButton1" runat="server" CssClass="radio"  GroupName="item1" OnCheckedChanged="RadioButton1_CheckedChanged" AutoPostBack="true"/>
-                    <asp:TextBox ID="txt_Resposta_A" runat="server" CssClass="respostas"></asp:TextBox>
-                    
-                </div>
-                     
-
-                <div class="radioButton">
-                    <asp:RadioButton ID="RadioButton2" runat="server" CssClass="radio" GroupName="item1" OnCheckedChanged="RadioButton2_CheckedChanged" AutoPostBack="true"/>
-                    <asp:TextBox ID="txt_Resposta_B" runat="server" CssClass="respostas"></asp:TextBox>
-                </div>
-                <div class="radioButton">
-                    <asp:RadioButton ID="RadioButton3" runat="server" CssClass="radio" GroupName="item1" OnCheckedChanged="RadioButton3_CheckedChanged" AutoPostBack="true"/>
-                    <asp:TextBox ID="txt_Resposta_C" runat="server" CssClass="respostas"></asp:TextBox>
-                </div>
-                <div class="radioButton">
-                    <asp:RadioButton ID="RadioButton4" runat="server" CssClass="radio" GroupName="item1" OnCheckedChanged="RadioButton4_CheckedChanged" AutoPostBack="true"/>
-                    <asp:TextBox ID="txt_Resposta_D" runat="server" CssClass="respostas"></asp:TextBox>
-                </div>
-            </div>
-        </asp:View>
-
-        <asp:View ID="view5" runat="server">
             <div class="container">
                 <h3 id="fim">Parabéns, para concluir clique em enviar!</h3>
             </div>

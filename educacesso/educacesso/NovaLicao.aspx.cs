@@ -69,29 +69,30 @@ namespace educacesso
 		{
 			new CursoAddDAO().CadastrarExercicio(txt_Pergunta.Text, codigoCurso, txt_Resposta_A.Text, txt_Resposta_B.Text, txt_Resposta_C.Text, txt_Resposta_D.Text, Teste.respostaCerta);
 			titulo.Text = "Exercicio Cadastrado com Sucesso!!";
+			MultiView1.Visible = false;
 			btn_cadastrar_exercicio.Visible = false;
 		}
 
 		protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
 		{
-			resposta_certa = txt_Resposta_A.Text;
+			
 			Teste.respostaCerta = txt_Resposta_A.Text;
 
 		}
 
 		protected void RadioButton2_CheckedChanged(object sender, EventArgs e)
 		{
-			resposta_certa = txt_Resposta_B.Text;
+			Teste.respostaCerta = txt_Resposta_B.Text;
 		}
 
 		protected void RadioButton3_CheckedChanged(object sender, EventArgs e)
 		{
-			resposta_certa = txt_Resposta_C.Text;
+			Teste.respostaCerta = txt_Resposta_C.Text;
 		}
 
 		protected void RadioButton4_CheckedChanged(object sender, EventArgs e)
 		{
-			resposta_certa = txt_Resposta_D.Text;
+			Teste.respostaCerta = txt_Resposta_D.Text;
 		}
 
 	}

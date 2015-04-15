@@ -86,3 +86,10 @@ div#conteudo{
    
     text-align: center;
 }
+
+.btnExercicio{
+	position: relative;
+	height: 35px;
+	width: auto;
+	left: 920px;
+}
