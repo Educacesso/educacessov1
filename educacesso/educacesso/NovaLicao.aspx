@@ -84,7 +84,7 @@
             <div class="container">
                 <h3>Parabéns, para concluir clique em enviar!</h3>
             </div>
-            <asp:Button ID="btn_cadastrar_exercicio" runat="server" Text="Novo Exercicio" CssClass="buttonSubmit" OnClick="btn_cadastrar_exercicio_Click" />
+            <asp:Button ID="btn_cadastrar_exercicio" runat="server" Text="CONCLUIR" CssClass="buttonSubmit" OnClick="btn_cadastrar_exercicio_Click" />
         </asp:View>
 	
     </asp:MultiView>
