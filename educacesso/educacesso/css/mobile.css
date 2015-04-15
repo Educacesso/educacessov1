@@ -4,7 +4,8 @@
     background-color: #00ffff;
 }
 header  {
-    background-color:#ff0000;
+    background-color:#fff;
+    color: #fff;
 }
 #interface {
     width:100%;
