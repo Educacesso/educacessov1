@@ -227,3 +227,9 @@ footer#rodape a{
     text-align: center;
 }
 
+@media(max-width:640px) {
+    body {
+        background-color:#00aeff;
+        margin: 0 20px;
+    }
+}
