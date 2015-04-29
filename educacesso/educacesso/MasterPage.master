@@ -33,7 +33,7 @@
                         <asp:LoginView ID="LoginView2" runat="server" EnableTheming="true">
                             <AnonymousTemplate>
                                 <li class="active"><a href="index.aspx">Home</a></li>
-                                <li><a href="listaCursos.aspx">Cursos</a></li>
+                                <li><a href="listaCursosOffline.aspx">Cursos</a></li>
                                 <li><a href="Sobre.aspx">Sobre</a></li>
                             </AnonymousTemplate>
                             <LoggedInTemplate>

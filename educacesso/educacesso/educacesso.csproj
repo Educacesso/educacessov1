@@ -460,7 +460,6 @@
     <Content Include="Imagens\Vini.png" />
     <Content Include="index.aspx" />
     <Content Include="inicio.aspx" />
-    <Content Include="listaCursos.aspx" />
     <Content Include="css\login.css" />
     <Content Include="css\StyleSheet.css" />
     <Content Include="Imagens\arvoreTransp.png" />
@@ -468,6 +467,7 @@
     <Content Include="Imagens\escrevendoo.jpg" />
     <Content Include="Imagens\logoEducacesso.png" />
     <Content Include="js\curso.js" />
+    <Content Include="listaCursosOffline.aspx" />
     <Content Include="login.aspx" />
     <Content Include="MeusCursos.aspx" />
     <Content Include="NovaLicao.aspx" />
@@ -530,16 +530,16 @@
     <Compile Include="inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
     </Compile>
-    <Compile Include="listaCursos.aspx.cs">
-      <DependentUpon>listaCursos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="listaCursos.aspx.designer.cs">
-      <DependentUpon>listaCursos.aspx</DependentUpon>
-    </Compile>
     <Compile Include="dao\ConnectionFactory.cs" />
     <Compile Include="dao\CursoDAO.cs" />
     <Compile Include="dao\UsuarioDAO.cs" />
+    <Compile Include="listaCursosOffline.aspx.cs">
+      <DependentUpon>listaCursosOffline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="listaCursosOffline.aspx.designer.cs">
+      <DependentUpon>listaCursosOffline.aspx</DependentUpon>
+    </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
