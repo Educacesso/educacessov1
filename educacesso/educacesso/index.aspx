@@ -12,7 +12,7 @@
 
         <div class="backImagem">
 
-            <img class="fundoImagem" src="Imagens/IdeiaSchool.jpg" />
+            <img class="fundoImagem" src="Imagens/IdeiaSchool.jpg" alt="Lâmpada educação" />
             <h1 class="indexTitulo">Crie seus cursos</h1>
             <p class="imagemP">No Educacesso você pode criar seus próprios cursos e compartilhar com quem quiser. Com a nossa ferramenta fica fácil ter seus cursos online. <a id="linkImagem" href="#"> Venha conferir!</a></p>
         </div>
@@ -21,7 +21,7 @@
 
             <h1 class="indexTitulo">Aprenda</h1>
             <p class="imagemP">Aprenda fazendo cursos sobre qualquer tema disponível no Educacesso e tenha acesso a todos os cursos feitos por outros usuários. Faça exercícios! Cresça no ranking! E tudo isso grátis!</p>
-            <img class="fundoImagem" src="Imagens/conhecimento.jpg" />
+            <img class="fundoImagem" src="Imagens/conhecimento.jpg" alt="Desenho de coruja" />
 
         </div>
        

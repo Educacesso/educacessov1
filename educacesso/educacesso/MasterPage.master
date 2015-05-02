@@ -24,7 +24,7 @@
         <div id="interface">
             <header id="cabecalho">
                 <div id="logo">
-                    <img src="../Imagens/logoEducacesso.png" />
+                    <img src="../Imagens/logoEducacesso.png" alt="Logo Educaceso" />
                 </div>
                 <h2>Crie seus próprios cursos Online</h2>
                 <nav id="menu">
@@ -83,7 +83,6 @@
             <footer id="rodape">
                 <p>Educacesso - Desenvolvido na BandTec - 2015</p>
                 <p>
-                    <a href="#">
                         <a href="https://www.facebook.com/portaleducacesso"> <img src="Imagens/icones/facebook.png" alt="Facebook Educacesso" width="50" height="50" /></a>  
 						  <a href="https://github.com/Educacesso/">    <img src="Imagens/icones/github.png" alt="GitHub Educacesso" width="50" height="50" /></a> 
                              <a href="https://twitter.com/educacesso">   <img src="Imagens/icones/twitter.png" alt="Twitter Educacesso" width="50" height="50" /></a> 
